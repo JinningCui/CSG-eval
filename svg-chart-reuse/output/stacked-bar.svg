@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.00 0.00 512.00 512.00" width="512" height="512">
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(85.89999999999999 352.6)" y1="-0.6"
+    y2="-194.2" font-size="5.8" stroke-opacity=".3" id="grid-y-0" class="grid-y"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(163.1 352.6)" y1="-0.6" y2="-194.2"
+    font-size="5.8" stroke-opacity=".3" id="grid-y-1" class="grid-y"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(240.2 352.6)" y1="-0.6" y2="-194.2"
+    font-size="5.8" stroke-opacity=".3" id="grid-y-2" class="grid-y"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(317.4 352.6)" y1="-0.6" y2="-194.2"
+    font-size="5.8" stroke-opacity=".3" id="grid-y-3" class="grid-y"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(394.6 352.6)" y1="-0.6" y2="-194.2"
+    font-size="5.8" stroke-opacity=".3" id="grid-y-4" class="grid-y"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(471.79999999999995 352.6)"
+    y1="-0.6" y2="-194.2" font-size="5.8" stroke-opacity=".3" id="grid-y-5" class="grid-y"></line>
+  <rect fill="#1b3d4c" stroke-width="0.7" width="231.3" height="49" x="1.3" y="125.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-0" class="mark-1"></rect>
+  <text fill="#fff" stroke-width="0.7" transform="translate(189.5 294.1)" font-size="9"
+    text-anchor="middle" id="label-0" class="label">
+    <tspan fill="#fff" stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">
+      60%</tspan>
+  </text>
+  <rect fill="#1b3d4c" stroke-width="0.7" width="185.1" height="49" x="1.3" y="66.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-1" class="mark-1"></rect>
+  <text fill="#fff" stroke-width="0.7" transform="translate(189.5 235.10000000000002)" font-size="9"
+    text-anchor="middle" id="label-1" class="label">
+    <tspan fill="#fff" stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">
+      40%</tspan>
+  </text>
+  <rect fill="#1b3d4c" stroke-width="0.7" width="148.9" height="49" x="1.3" y="7.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-2" class="mark-1"></rect>
+  <text fill="#fff" stroke-width="0.7" transform="translate(189.5 176.1)" font-size="9"
+    text-anchor="middle" id="label-2" class="label">
+    <tspan fill="#fff" stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">
+      35%</tspan>
+  </text>
+  <rect fill="#2a978f" stroke-width="0.7" width="69.4" height="49" x="232.6" y="125.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-3" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(355 294.1)" font-size="9" text-anchor="middle"
+    fill="#000000" id="label-3" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">15%</tspan>
+  </text>
+  <rect fill="#2a978f" stroke-width="0.7" width="69.4" height="49" x="186.4" y="66.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-4" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(308.79999999999995 235.10000000000002)"
+    font-size="9" text-anchor="middle" fill="#000000" id="label-4" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">15%</tspan>
+  </text>
+  <rect fill="#2a978f" stroke-width="0.7" width="69.4" height="49" x="149.7" y="7.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-5" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(272.1 176.1)" font-size="9" text-anchor="middle"
+    fill="#000000" id="label-5" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">20%</tspan>
+  </text>
+  <rect fill="#e96c47" stroke-width="0.7" width="46.3" height="49" x="302" y="125.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-6" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(401.29999999999995 294.1)" font-size="9"
+    text-anchor="middle" fill="#000000" id="label-6" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">5%</tspan>
+  </text>
+  <rect fill="#e96c47" stroke-width="0.7" width="69.4" height="49" x="255.8" y="66.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-7" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(378.20000000000005 235.10000000000002)"
+    font-size="9" text-anchor="middle" fill="#000000" id="label-7" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">20%</tspan>
+  </text>
+  <rect fill="#e96c47" stroke-width="0.7" width="82.5" height="49" x="219" y="7.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-8" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(354.5 176.1)" font-size="9" text-anchor="middle"
+    fill="#000000" id="label-8" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">25%</tspan>
+  </text>
+  <rect fill="#f38630" stroke-width="0.7" width="34.7" height="49" x="348.3" y="125.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-9" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(442 294.1)" font-size="9" text-anchor="middle"
+    fill="#000000" id="label-9" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">10%</tspan>
+  </text>
+  <rect fill="#f38630" stroke-width="0.7" width="34.7" height="49" x="325.2" y="66.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-10" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(418.9 235.10000000000002)" font-size="9"
+    text-anchor="middle" fill="#000000" id="label-10" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">15%</tspan>
+  </text>
+  <rect fill="#f38630" stroke-width="0.7" width="58" height="49" x="301.7" y="7.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-11" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(422.70000000000005 176.1)" font-size="9"
+    text-anchor="middle" fill="#000000" id="label-11" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">15%</tspan>
+  </text>
+  <rect fill="#e9bc5c" stroke-width="0.7" width="34.7" height="49" x="382.9" y="125.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-12" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(476.6 294.1)" font-size="9" text-anchor="middle"
+    fill="#000000" id="label-12" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">10%</tspan>
+  </text>
+  <rect fill="#e9bc5c" stroke-width="0.7" width="34.7" height="49" x="359.9" y="66.3"
+    font-size="5.8" transform="translate(84.6 158.4)" id="mark-1-13" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(453.6 235.10000000000002)" font-size="9"
+    text-anchor="middle" fill="#000000" id="label-13" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">10%</tspan>
+  </text>
+  <rect fill="#e9bc5c" stroke-width="0.7" width="23.2" height="49" x="359.7" y="7.3" font-size="5.8"
+    transform="translate(84.6 158.4)" id="mark-1-14" class="mark-1"></rect>
+  <text stroke-width="0.7" transform="translate(446.79999999999995 176.1)" font-size="9"
+    text-anchor="middle" fill="#000000" id="label-14" class="label">
+    <tspan stroke-width="0.7" x="0" y="0" dy=".9em" font-size="9" text-anchor="middle">5%</tspan>
+  </text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(85.2 317.9)" id="axis-y-tick-0" class="axis-y tick"></line>
+  <text fill="#666" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(85.2 317.9)" id="axis-y-label-0" class="axis-y label">Asia</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(85.2 258.9)" id="axis-y-tick-1" class="axis-y tick"></line>
+  <text fill="#666" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(85.2 258.9)" id="axis-y-label-1" class="axis-y label">North
+    America</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(85.2 199.89999999999998)" id="axis-y-tick-2" class="axis-y tick"></line>
+  <text fill="#666" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(85.2 199.89999999999998)" id="axis-y-label-2"
+    class="axis-y label">Europe</text>
+  <path d="M 85.2 46.1 V 239.7" fill="none" stroke="#ebe9dd" stroke-width="1.3"
+    transform="translate(0 112.3)" id="domain-y" class="domain-y"></path>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(85.9 352.6)" id="axis-x-tick-0" class="axis-x tick"></line>
+  <text fill="#666" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(85.9 352.6)" id="axis-x-label-0" class="axis-x label">0%</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(163 352.6)" id="axis-x-tick-1" class="axis-x tick"></line>
+  <text fill="#666" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(163 352.6)" id="axis-x-label-1" class="axis-x label">20%</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(240.2 352.6)" id="axis-x-tick-2" class="axis-x tick"></line>
+  <text fill="#666" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(240.2 352.6)" id="axis-x-label-2" class="axis-x label">40%</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(317.4 352.6)" id="axis-x-tick-3" class="axis-x tick"></line>
+  <text fill="#666" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(317.4 352.6)" id="axis-x-label-3" class="axis-x label">60%</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(394.6 352.6)" id="axis-x-tick-4" class="axis-x tick"></line>
+  <text fill="#666" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(394.6 352.6)" id="axis-x-label-4" class="axis-x label">80%</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(471.8 352.6)" id="axis-x-tick-5" class="axis-x tick"></line>
+  <text fill="#666" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(471.8 352.6)" id="axis-x-label-5" class="axis-x label">100%</text>
+  <text fill="#666" stroke-width="0.7" transform="translate(16 128.3)" dy="22" font-size="14.1"
+    id="title-0" class="title">Global Electricity Mix by Region</text>
+  <text fill="#666" stroke-width="0.7" transform="translate(254.5 128.3)" dx="28" dy="14"
+    font-size="9" id="legend-label-0" class="legend label">Fossil</text>
+  <path d="M 263.4 27.1 a 5.1 5.1 0 1 1 0 -10.1 a 5.1 5.1 0 1 1 0 10.1" fill="#1b3d4c"
+    stroke-width=".7" transform="translate(0 112.3)" id="legend-mark-1-0"
+    class="legend mark legend-1"></path>
+  <text fill="#666" stroke-width="0.7" transform="translate(300.5 128.3)" dx="28" dy="14"
+    font-size="9" id="legend-label-1" class="legend label">Hydro</text>
+  <path d="M 309.5 27.1 a 5.1 5.1 0 1 1 0 -10.1 a 5.1 5.1 0 1 1 0 10.1" fill="#2a978f"
+    stroke-width=".7" transform="translate(0 112.3)" id="legend-mark-1-1"
+    class="legend mark legend-1"></path>
+  <text fill="#666" stroke-width="0.7" transform="translate(349.6 128.3)" dx="28" dy="14"
+    font-size="9" id="legend-label-2" class="legend label">Nuclear</text>
+  <path d="M 358.6 27.1 a 5.1 5.1 0 1 1 0 -10.1 a 5.1 5.1 0 1 1 0 10.1" fill="#e96c47"
+    stroke-width=".7" transform="translate(0 112.3)" id="legend-mark-1-2"
+    class="legend mark legend-1"></path>
+  <text fill="#666" stroke-width="0.7" transform="translate(400.3 128.3)" dx="28" dy="14"
+    font-size="9" id="legend-label-3" class="legend label">Wind</text>
+  <path d="M 409.3 27.1 a 5.1 5.1 0 1 1 0 -10.1 a 5.1 5.1 0 1 1 0 10.1" fill="#f38630"
+    stroke-width=".7" transform="translate(0 112.3)" id="legend-mark-1-3"
+    class="legend mark legend-1"></path>
+  <text fill="#666" stroke-width="0.7" transform="translate(446.3 128.3)" dx="28" dy="14"
+    font-size="9" id="legend-label-4" class="legend label">Solar</text>
+  <path d="M 455.3 27.1 a 5.1 5.1 0 1 1 0 -10.1 a 5.1 5.1 0 1 1 0 10.1" fill="#e9bc5c"
+    stroke-width=".7" transform="translate(0 112.3)" id="legend-mark-1-4"
+    class="legend mark legend-1"></path>
+</svg>

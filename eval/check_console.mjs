@@ -1,0 +1,11 @@
+import puppeteer from "puppeteer-core";
+const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: "new", args: ["--no-sandbox"] });
+const page = await browser.newPage();
+const errs = [];
+page.on("console", (m) => { const t = m.text(); if (/translate/i.test(t)) errs.push(t); });
+await page.goto("http://localhost:5180", { waitUntil: "networkidle0", timeout: 60000 });
+await new Promise((r) => setTimeout(r, 2500));
+console.log("translate-related console msgs:");
+[...new Set(errs)].forEach((e) => console.log("  " + e));
+await browser.close();

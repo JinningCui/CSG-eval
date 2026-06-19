@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.00 0.00 512.00 512.00" width="512" height="512">
+  <defs transform="translate(109.7 0)">
+    <linearGradient
+      id="rr-0-360-rgba 255 255 255 0.4 0-rgba 204 204 204 0 100-rgba 255 255 255 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 "
+      x1="0" x2="1.5" y1="0" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".4"></stop>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient
+      id="rr-0-180-rgba 255 255 255 0.4 0-rgba 204 204 204 0 100-rgba 255 255 255 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 "
+      x1="1.5" x2="0" y1="0" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".4"></stop>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#ccc" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient
+      id="rr-0-360-rgba 255 255 255 0.5 0-rgba 204 204 204 0.5 15-rgba 255 255 255 0.5 15-rgba 255 255 255 0.5 27-rgba 204 204 204 0.5 27-rgba 0 81 135 0.7000000000000001 42-rgba 204 204 204 0.5 85-rgba 255 255 255 0.5 100"
+      x1="0" x2="1.5" y1="0" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".5"></stop>
+      <stop offset="15%" stop-color="#ccc" stop-opacity=".5"></stop>
+      <stop offset="15%" stop-color="#fff" stop-opacity=".5"></stop>
+      <stop offset="27%" stop-color="#fff" stop-opacity=".5"></stop>
+      <stop offset="27%" stop-color="#ccc" stop-opacity=".5"></stop>
+      <stop offset="42%" stop-color="#005187" stop-opacity=".7"></stop>
+      <stop offset="85%" stop-color="#ccc" stop-opacity=".5"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity=".5"></stop>
+    </linearGradient>
+    <linearGradient
+      id="rr-0-360-rgba 255 255 255 0.3 0-rgba 204 204 204 0.3 15-rgba 255 255 255 0.3 58-rgba 204 204 204 0.3 73-rgba 229 229 229 0.3 73-rgba 229 229 229 0.3 85-rgba 204 204 204 0.3 85-rgba 255 255 255 0.3 100"
+      x1="0" x2="1.5" y1="0" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".3"></stop>
+      <stop offset="15%" stop-color="#ccc" stop-opacity=".3"></stop>
+      <stop offset="58%" stop-color="#fff" stop-opacity=".3"></stop>
+      <stop offset="73%" stop-color="#ccc" stop-opacity=".3"></stop>
+      <stop offset="73%" stop-color="#e5e5e5" stop-opacity=".3"></stop>
+      <stop offset="85%" stop-color="#e5e5e5" stop-opacity=".3"></stop>
+      <stop offset="85%" stop-color="#ccc" stop-opacity=".3"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity=".3"></stop>
+    </linearGradient>
+    <linearGradient
+      id="rr-0-360-rgba 255 255 255 0.3 0-rgba 204 204 204 0.3 15-rgba 255 255 255 0.3 15-rgba 255 255 255 0.3 27-rgba 204 204 204 0.3 27-rgba 255 255 255 0.3 42-rgba 204 204 204 0.3 85-rgba 255 255 255 0.3 100"
+      x1="0" x2="1.5" y1="0" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".3"></stop>
+      <stop offset="15%" stop-color="#ccc" stop-opacity=".3"></stop>
+      <stop offset="15%" stop-color="#fff" stop-opacity=".3"></stop>
+      <stop offset="27%" stop-color="#fff" stop-opacity=".3"></stop>
+      <stop offset="27%" stop-color="#ccc" stop-opacity=".3"></stop>
+      <stop offset="42%" stop-color="#fff" stop-opacity=".3"></stop>
+      <stop offset="85%" stop-color="#ccc" stop-opacity=".3"></stop>
+      <stop offset="100%" stop-color="#fff" stop-opacity=".3"></stop>
+    </linearGradient>
+    <radialGradient id="rr-0-xr 100 0.5 0 rgba 76 158 212 1 0-rgba 0 81 135 1 100" cx=".7" cy="0"
+      r="100%" fx=".5" fy="0">
+      <stop offset="0%" stop-color="#4c9ed4"></stop>
+      <stop offset="100%" stop-color="#005187"></stop>
+    </radialGradient>
+    <radialGradient id="rr-0-xr 100 0.5 0.7 rgba 76 158 212 1 0-rgba 0 81 135 1 100" cx=".7" cy="1"
+      r="100%" fx=".5" fy=".7">
+      <stop offset="0%" stop-color="#4c9ed4"></stop>
+      <stop offset="100%" stop-color="#005187"></stop>
+    </radialGradient>
+  </defs>
+  <rect fill="none" stroke-width="1.5" stroke="#767575" rx="0" ry="0" width="292.6" height="512"
+    font-size="11.7" stroke-opacity=".5" transform="translate(109.7 0)" id="background-0"
+    class="background"></rect>
+  <path d="M 19.0 380.3 a 98.0 31.4 0 0 0 196.0 0 h 0 a 98.0 31.4 0 0 0 -196.0 0 z " fill="none"
+    stroke="#ccc" stroke-width="5.8" transform="translate(109.7 0)" id="mark-1-0" class="mark-1"></path>
+  <path d="M 21.9 380.3 a 95.1 28.5 0 0 0 190.2 0 h 0 a 95.1 28.5 0 0 0 -190.2 0 z " fill="none"
+    stroke="#ccc" stroke-width="5.8" transform="translate(109.7 0)" id="mark-1-1" class="mark-1"></path>
+  <path d="M 21.9 374.4 a 95.1 28.5 0 0 0 190.2 0 a 95.1 28.5 0 0 0 -190.2 0 z "
+    fill="url('#rr-0-360-rgba 255 255 255 0.5 0-rgba 204 204 204 0.5 15-rgba 255 255 255 0.5 15-rgba 255 255 255 0.5 27-rgba 204 204 204 0.5 27-rgba 0 81 135 0.7000000000000001 42-rgba 204 204 204 0.5 85-rgba 255 255 255 0.5 100')"
+    stroke="#000" stroke-width="1.5" transform="translate(109.7 0)" id="mark-2-0" class="mark-2"></path>
+  <path d="M 21.9 374.4 a 95.1 28.5 0 0 0 190.2 0 V 162.1 a 95.1 28.5 0 0 0 -190.2 0 z "
+    fill="url('#rr-0-360-rgba 255 255 255 0.3 0-rgba 204 204 204 0.3 15-rgba 255 255 255 0.3 58-rgba 204 204 204 0.3 73-rgba 229 229 229 0.3 73-rgba 229 229 229 0.3 85-rgba 204 204 204 0.3 85-rgba 255 255 255 0.3 100')"
+    stroke="#ccc" stroke-width="1.5" transform="translate(109.7 0)" id="mark-2-1" class="mark-2"></path>
+  <path d="M 21.9 374.4 a 95.1 28.5 0 0 0 190.2 0 v -209.4 a 95.1 28.5 0 0 1 -190.2 0 z "
+    fill="url('#rr-0-xr 100 0.5 0 rgba 76 158 212 1 0-rgba 0 81 135 1 100')" stroke="#000"
+    stroke-width="1.5" transform="translate(109.7 0)" id="mark-2-2" class="mark-2"></path>
+  <path d="M 24.1 165.0 a 92.9 28.5 0 0 0 185.8 0 h 0 a 92.9 28.5 0 0 0 -185.8 0 z "
+    fill="url('#rr-0-xr 100 0.5 0.7 rgba 76 158 212 1 0-rgba 0 81 135 1 100')" stroke="#4c9ed4"
+    stroke-width="2.9" transform="translate(109.7 0)" id="mark-3-0" class="mark-3"></path>
+  <path d="M 21.9 374.4 a 95.1 28.5 0 0 0 190.2 0 V 162.1 a 95.1 28.5 0 0 1 -190.2 0 z "
+    fill="url('#rr-0-360-rgba 255 255 255 0.3 0-rgba 204 204 204 0.3 15-rgba 255 255 255 0.3 15-rgba 255 255 255 0.3 27-rgba 204 204 204 0.3 27-rgba 255 255 255 0.3 42-rgba 204 204 204 0.3 85-rgba 255 255 255 0.3 100')"
+    stroke="#ccc" stroke-width="1.5" transform="translate(109.7 0)" id="mark-2-3" class="mark-2"></path>
+  <path d="M 21.9 374.4 a 95.1 28.5 1 0 0 14.8 14.8 V 176.9 a 95.1 28.5 0 0 1 -14.8 -14.8 z "
+    fill="url('#rr-0-360-rgba 255 255 255 0.4 0-rgba 204 204 204 0 100-rgba 255 255 255 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 ')"
+    stroke="#000" stroke-width="1.5" transform="translate(109.7 0)" id="mark-2-4" class="mark-2"></path>
+  <path d="M 198.7 389.2 a 95.1 28.5 0 0 0 14.8 -14.8 V 162.1 a 95.1 28.5 1 0 0 -14.8 14.8 z "
+    fill="url('#rr-0-180-rgba 255 255 255 0.4 0-rgba 204 204 204 0 100-rgba 255 255 255 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 -rgba 204 204 204 0 -rgba 255 255 255 0 ')"
+    stroke="#000" stroke-width="1.5" transform="translate(109.7 0)" id="mark-2-5" class="mark-2"></path>
+  <path d="M 21.9 157.3 a 95.1 28.5 0 0 0 190.2 0 h 0 a 95.1 28.5 0 0 0 -190.2 0 z " fill="none"
+    stroke="#ccc" stroke-width="2.9" transform="translate(109.7 0)" id="mark-3-1" class="mark-3"></path>
+  <path d="M 216.5 374.4 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-6" class="mark-2"></path>
+  <path d="M 216.5 351.9 h 4.4" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-7" class="mark-2"></path>
+  <path d="M 216.5 329.3 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-8" class="mark-2"></path>
+  <path d="M 216.5 306.8 h 4.4" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-9" class="mark-2"></path>
+  <path d="M 216.5 284.2 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-10" class="mark-2"></path>
+  <path d="M 216.5 261.7 h 4.4" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-11" class="mark-2"></path>
+  <path d="M 216.5 239.2 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-12" class="mark-2"></path>
+  <path d="M 216.5 216.7 h 4.4" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-13" class="mark-2"></path>
+  <path d="M 216.5 194.2 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-14" class="mark-2"></path>
+  <path d="M 216.5 171.6 h 4.4" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-15" class="mark-2"></path>
+  <path d="M 216.5 149.1 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-16" class="mark-2"></path>
+  <path d="M 216.5 126.6 h 4.4" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-17" class="mark-2"></path>
+  <path d="M 216.5 104.0 h 8.8" fill="none" stroke="#333" stroke-width="1.5"
+    transform="translate(109.7 0)" id="mark-2-18" class="mark-2"></path>
+  <text fill="#333" stroke-width="1.5" x="228.2" y="374.4" font-size="14.6"
+    font-family="Helvetica Neue,Arial" transform="translate(109.7 0)" id="axis-y-label-0"
+    class="axis-y label">
+    <tspan fill="#333" stroke-width="1.5" x="228.2" dy="3.8" font-size="14.6"
+      font-family="Helvetica Neue,Arial">Empty</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="228.2" y="329.3" font-size="14.6"
+    font-family="Helvetica Neue,Arial" transform="translate(109.7 0)" id="axis-y-label-1"
+    class="axis-y label">
+    <tspan fill="#333" stroke-width="1.5" x="228.2" dy="3.8" font-size="14.6"
+      font-family="Helvetica Neue,Arial">1000</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="228.2" y="284.2" font-size="14.6"
+    font-family="Helvetica Neue,Arial" transform="translate(109.7 0)" id="axis-y-label-2"
+    class="axis-y label">
+    <tspan fill="#333" stroke-width="1.5" x="228.2" dy="3.8" font-size="14.6"
+      font-family="Helvetica Neue,Arial">2000</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="228.2" y="239.2" font-size="14.6"
+    font-family="Helvetica Neue,Arial" transform="translate(109.7 0)" id="axis-y-label-3"
+    class="axis-y label">
+    <tspan fill="#333" stroke-width="1.5" x="228.2" dy="3.8" font-size="14.6"
+      font-family="Helvetica Neue,Arial">3000</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="228.2" y="194.2" font-size="14.6"
+    font-family="Helvetica Neue,Arial" transform="translate(109.7 0)" id="axis-y-label-4"
+    class="axis-y label">
+    <tspan fill="#333" stroke-width="1.5" x="228.2" dy="3.8" font-size="14.6"
+      font-family="Helvetica Neue,Arial">Full</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="117" y="466.3" font-size="14.6"
+    font-family="Helvetica Neue,Arial" text-anchor="middle" transform="translate(109.7 0)"
+    id="title-0" class="title">
+    <tspan fill="#333" stroke-width="1.5" x="117" dy="9.8" font-size="14.6"
+      font-family="Helvetica Neue,Arial" text-anchor="middle">2500 Gal</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="117" y="14.6" font-size="20.5"
+    font-family="Helvetica Neue,Arial" text-anchor="middle" transform="translate(109.7 0)"
+    id="title-1" class="title">
+    <tspan fill="#333" stroke-width="1.5" x="117" dy="13.7" font-size="20.5"
+      font-family="Helvetica Neue,Arial" text-anchor="middle">Purified Water</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="117" y="41" font-size="20.5"
+    font-family="Helvetica Neue,Arial" text-anchor="middle" transform="translate(109.7 0)"
+    id="title-2" class="title">
+    <tspan fill="#333" stroke-width="1.5" x="117" dy="13.7" font-size="20.5"
+      font-family="Helvetica Neue,Arial" text-anchor="middle">Storage Level</tspan>
+  </text>
+  <text fill="#333" stroke-width="1.5" x="117" y="68.6" font-size="20.5"
+    font-family="Helvetica Neue,Arial" text-anchor="middle" transform="translate(109.7 0)"
+    id="title-3" class="title">
+    <tspan fill="#333" stroke-width="1.5" x="117" dy="13.7" font-size="20.5"
+      font-family="Helvetica Neue,Arial" text-anchor="middle">City Water Plant</tspan>
+  </text>
+  <text stroke-width="1.5" x="8.8" y="506.1" font-size="13.2" font-family="Verdana,sans"
+    fill-opacity=".5" fill="#000000" transform="translate(109.7 0)" id="title-4" class="title">
+    <tspan stroke-width="1.5" x="8.8" dy="-1.6" font-size="13.2" font-family="Verdana,sans"
+      fill-opacity=".5">FusionCharts XT Trial</tspan>
+  </text>
+</svg>

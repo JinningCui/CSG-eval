@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.00 0.00 512.00 512.00" width="512" height="512">
+  <rect fill="#141620" stroke-width="0.7" width="512.7" height="288.4" font-size="5.8"
+    transform="translate(0 112.3)" id="background-0" class="background"></rect>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(56.4 310.70000000000005)" x1="0.6"
+    x2="439.7" font-size="5.8" stroke-opacity=".3" id="mark-1-0" class="mark-1"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(56.4 281.8)" x1="0.6" x2="439.7"
+    font-size="5.8" stroke-opacity=".3" id="mark-1-1" class="mark-1"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(56.4 253)" x1="0.6" x2="439.7"
+    font-size="5.8" stroke-opacity=".3" id="mark-1-2" class="mark-1"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(56.4 224.10000000000002)" x1="0.6"
+    x2="439.7" font-size="5.8" stroke-opacity=".3" id="mark-1-3" class="mark-1"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(56.4 195.3)" x1="0.6" x2="439.7"
+    font-size="5.8" stroke-opacity=".3" id="mark-1-4" class="mark-1"></line>
+  <line stroke-width="0.6" stroke="#ebe9dd" transform="translate(56.4 166.4)" x1="0.6" x2="439.7"
+    font-size="5.8" stroke-opacity=".3" id="mark-1-5" class="mark-1"></line>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="76.2" x="7.9" y="76.2"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-0" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="90.7" x="33.6" y="61.6"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-1" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="84.1" x="59.3" y="68.2"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-2" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="94.6" x="85" y="57.8" font-size="5.8"
+    transform="translate(55.8 158.4)" id="mark-2-3" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="101.2" x="110.7" y="51.1"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-4" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="108.7" x="136.4" y="43.6"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-5" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="123.4" x="162.1" y="28.9"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-6" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="127.3" x="187.8" y="25"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-7" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="136.8" x="213.5" y="15.5"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-8" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="136.8" x="239.2" y="15.5"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-9" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="127.3" x="264.9" y="25"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-10" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="111.6" x="290.6" y="40.7"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-11" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="101.2" x="316.3" y="51.1"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-12" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="94.6" x="342" y="57.8"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-13" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="98.5" x="367.7" y="53.8"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-14" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="108.7" x="393.4" y="43.6"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-15" class="mark-2"></rect>
+  <rect fill="#1a9cf0" stroke-width="0.7" width="21.5" height="101.2" x="419.1" y="51.1"
+    font-size="5.8" transform="translate(55.8 158.4)" id="mark-2-16" class="mark-2"></rect>
+  <path
+    d="M 7.9 76.2 h 43.0 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 L 162.1 57.8 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6"
+    fill="none" stroke="#f213b5" stroke-width="1.9" transform="translate(55.8 158.4)" id="mark-3-0"
+    class="mark-3"></path>
+  <path
+    d="M 7.9 152.3 h 43.0 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6"
+    fill="none" stroke="#f213b5" stroke-width="1.9" transform="translate(55.8 158.4)" id="mark-3-1"
+    class="mark-3"></path>
+  <path
+    d="m 7.9 144.4 l 13.8 -4.9 l 13.8 4.9 h 27.6 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 -4.9 l 13.8 -4.9"
+    fill="none" stroke="#7d2ce9" stroke-width="1.9" transform="translate(55.8 158.4)" id="mark-3-2"
+    class="mark-3"></path>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(0 112.3)rotate(-90 75.6 59.6)"
+    dy="16" font-size="10.3" text-anchor="middle" id="title-0" class="title">PeakFLOPS (VPIL OPS)</text>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(275.6 335.6)" dy="16"
+    font-size="10.3" text-anchor="middle" id="title-1" class="title">Operation Month</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(56.4 310.7)" id="axis-y-tick-0" class="axis-y tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(56.4 310.7)" id="axis-y-label-0" class="axis-y label">0</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(56.4 281.9)" id="axis-y-tick-1" class="axis-y tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(56.4 281.9)" id="axis-y-label-1" class="axis-y label">200</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(56.4 253)" id="axis-y-tick-2" class="axis-y tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(56.4 253)" id="axis-y-label-2" class="axis-y label">400</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(56.4 224.1)" id="axis-y-tick-3" class="axis-y tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(56.4 224.1)" id="axis-y-label-3" class="axis-y label">600</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(56.4 195.3)" id="axis-y-tick-4" class="axis-y tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(56.4 195.3)" id="axis-y-label-4" class="axis-y label">800</text>
+  <line stroke-width="0.7" stroke="#333" x2="-4.5" font-size="5.8" display="block"
+    transform="translate(56.4 166.4)" id="axis-y-tick-5" class="axis-y tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" x="-6.4" dy="7" font-size="9" text-anchor="end"
+    display="block" transform="translate(56.4 166.4)" id="axis-y-label-5" class="axis-y label">1000</text>
+  <path d="M 56.4 46.1 v 152.3" fill="none" stroke="#ebe9dd" stroke-width="1.3"
+    transform="translate(0 112.3)" id="domain-y" class="domain-y"></path>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(76.3 311.3)" id="axis-x-tick-0" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(76.3 311.3)" id="axis-x-label-0" class="axis-x label">Jan</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(116.3 311.3)" id="axis-x-tick-1" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(116.3 311.3)" id="axis-x-label-1" class="axis-x label">Feb</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(156.3 311.3)" id="axis-x-tick-2" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(156.3 311.3)" id="axis-x-label-2" class="axis-x label">Mar</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(196.3 311.3)" id="axis-x-tick-3" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(196.3 311.3)" id="axis-x-label-3" class="axis-x label">Apr</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(236.3 311.3)" id="axis-x-tick-4" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(236.3 311.3)" id="axis-x-label-4" class="axis-x label">May</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(276.3 311.3)" id="axis-x-tick-5" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(276.3 311.3)" id="axis-x-label-5" class="axis-x label">Jun</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(316.3 311.3)" id="axis-x-tick-6" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(316.3 311.3)" id="axis-x-label-6" class="axis-x label">Jul</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(356.3 311.3)" id="axis-x-tick-7" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(356.3 311.3)" id="axis-x-label-7" class="axis-x label">Aug</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(396.3 311.3)" id="axis-x-tick-8" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(396.3 311.3)" id="axis-x-label-8" class="axis-x label">Sep</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(436.3 311.3)" id="axis-x-tick-9" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(436.3 311.3)" id="axis-x-label-9" class="axis-x label">Oct</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(476.3 311.3)" id="axis-x-tick-10" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(476.3 311.3)" id="axis-x-label-10" class="axis-x label">Nov</text>
+  <line stroke-width="0.7" stroke="#333" y2="4.5" font-size="5.8" display="block"
+    transform="translate(516.3 311.3)" id="axis-x-tick-11" class="axis-x tick"></line>
+  <text fill="#ebe9dd" stroke-width="0.7" y="6.4" dy="7" font-size="9" text-anchor="middle"
+    display="block" transform="translate(516.3 311.3)" id="axis-x-label-11" class="axis-x label">Dec</text>
+  <path d="M 57.0 199.0 H 596.7" fill="none" stroke="#ebe9dd" stroke-width="1.3"
+    transform="translate(0 112.3)" id="domain-x" class="domain-x"></path>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(121.6 128.3)" dy="22"
+    font-size="14.1" id="title-2" class="title">Quantum Cluster Compute Workload &amp; Error Rates</text>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(184.6 148.1)" dy="11"
+    font-size="10.3" id="title-3" class="title">Q4 FY23 - Q3 FY24 (Global Nodes)</text>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(121.6 364.1)" dx="28" dy="14"
+    font-size="9" id="legend-label-0" class="legend label">Total Workload</text>
+  <path d="M 125.2 252.9 h 9.0 v 9.0 h -9.0 z " fill="#1a9cf0" stroke-width=".7"
+    transform="translate(0 112.3)" id="legend-mark-1-0" class="legend mark legend-1"></path>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(232.5 364.1)" dx="28" dy="14"
+    font-size="9" id="legend-label-1" class="legend label">Max Capacity</text>
+  <path d="M 236.1 252.9 h 9.0 v 9.0 h -9.0 z " fill="#f213b5" stroke-width=".7"
+    transform="translate(0 112.3)" id="legend-mark-1-1" class="legend mark legend-1"></path>
+  <text fill="#ebe9dd" stroke-width="0.7" transform="translate(325.2 364.1)" dx="28" dy="14"
+    font-size="9" id="legend-label-2" class="legend label">Error Overhead</text>
+  <path d="M 328.8 252.9 h 9.0 v 9.0 h -9.0 z " fill="#7d2ce9" stroke-width=".7"
+    transform="translate(0 112.3)" id="legend-mark-1-2" class="legend mark legend-1"></path>
+</svg>

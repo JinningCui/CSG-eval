@@ -1,0 +1,856 @@
+{
+  "BarChart1.svg": [
+    {
+      "cls": "background",
+      "tag": "path",
+      "xMin": 0,
+      "xMax": 778,
+      "yMin": 0,
+      "yMax": 851
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 84,
+      "xMax": 308.5,
+      "yMin": 72.5,
+      "yMax": 155.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 84,
+      "xMax": 533.5,
+      "yMin": 221.5,
+      "yMax": 304.5
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 84,
+      "xMax": 646,
+      "yMin": 371,
+      "yMax": 454
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 84,
+      "xMax": 308.5,
+      "yMin": 520.5,
+      "yMax": 603.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 84,
+      "xMax": 195.5,
+      "yMin": 669.5,
+      "yMax": 752.5
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": 652.5,
+      "xMax": 690.65625,
+      "yMin": 405,
+      "yMax": 420
+    },
+    {
+      "cls": "domain-y",
+      "tag": "path",
+      "xMin": 83.5,
+      "xMax": 83.5,
+      "yMin": 39,
+      "yMax": 787
+    },
+    {
+      "cls": "title",
+      "tag": "text",
+      "xMin": 0.0185546875,
+      "xMax": 56.2587890625,
+      "yMin": 5,
+      "yMax": 21
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 77,
+      "xMax": 83,
+      "yMin": 39.5,
+      "yMax": 786.5
+    },
+    {
+      "cls": "axis-y label",
+      "tag": "text",
+      "xMin": 45.0625,
+      "xMax": 73,
+      "yMin": 106,
+      "yMax": 121
+    },
+    {
+      "cls": "axis-y label",
+      "tag": "text",
+      "xMin": 46.203125,
+      "xMax": 73,
+      "yMin": 255,
+      "yMax": 270
+    },
+    {
+      "cls": "axis-y label",
+      "tag": "text",
+      "xMin": 41.86328125,
+      "xMax": 73,
+      "yMin": 405,
+      "yMax": 420
+    },
+    {
+      "cls": "axis-y label",
+      "tag": "text",
+      "xMin": 35.265625,
+      "xMax": 73,
+      "yMin": 554,
+      "yMax": 569
+    },
+    {
+      "cls": "axis-y label",
+      "tag": "text",
+      "xMin": 43.453125,
+      "xMax": 73,
+      "yMin": 703,
+      "yMax": 718
+    },
+    {
+      "cls": "domain-x",
+      "tag": "path",
+      "xMin": 83,
+      "xMax": 759,
+      "yMin": 786.5,
+      "yMax": 786.5
+    },
+    {
+      "cls": "title",
+      "tag": "text",
+      "xMin": 0,
+      "xMax": 52.34375,
+      "yMin": 0,
+      "yMax": 16
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 83.5,
+      "xMax": 758.5,
+      "yMin": 787,
+      "yMax": 793
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 67.2421875,
+      "xMax": 97.7578125,
+      "yMin": 797,
+      "yMax": 812
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 288.421875,
+      "xMax": 326.578125,
+      "yMin": 797,
+      "yMax": 812
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 513.421875,
+      "xMax": 551.578125,
+      "yMin": 797,
+      "yMax": 812
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 738.421875,
+      "xMax": 776.578125,
+      "yMin": 797,
+      "yMax": 812
+    },
+    {
+      "cls": "title",
+      "tag": "text",
+      "xMin": 0,
+      "xMax": 337.203125,
+      "yMin": 0,
+      "yMax": 19.21875
+    }
+  ],
+  "BarChart2.svg": [
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -103.953125,
+      "xMax": -15,
+      "yMin": 2.546255111694336,
+      "yMax": 20.546255111694336
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -71.046875,
+      "xMax": -15,
+      "yMin": 32.88105392456055,
+      "yMax": 50.88105392456055
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -128.84375,
+      "xMax": -15,
+      "yMin": 63.215850830078125,
+      "yMax": 81.21585083007812
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -101.28125,
+      "xMax": -15,
+      "yMin": 93.55065155029297,
+      "yMax": 111.55065155029297
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -44.34375,
+      "xMax": -15,
+      "yMin": 123.88545227050781,
+      "yMax": 141.8854522705078
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -64.796875,
+      "xMax": -15,
+      "yMin": 154.2202606201172,
+      "yMax": 172.2202606201172
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -58.59375,
+      "xMax": -15,
+      "yMin": 184.5550537109375,
+      "yMax": 202.5550537109375
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -111.0625,
+      "xMax": -15,
+      "yMin": 214.88986206054688,
+      "yMax": 232.88986206054688
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -56.8125,
+      "xMax": -15,
+      "yMin": 245.22463989257812,
+      "yMax": 263.2246398925781
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": -80.796875,
+      "xMax": -15,
+      "yMin": 275.5594482421875,
+      "yMax": 293.5594482421875
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 304.3479919433594,
+      "yMax": 304.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 436.0674133300781,
+      "xMax": 471.6611633300781,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 360.30670166015625,
+      "xMax": 395.90045166015625,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 288.9913024902344,
+      "xMax": 315.6944274902344,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 213.23057556152344,
+      "xMax": 239.93370056152344,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 137.46986389160156,
+      "xMax": 164.17298889160156,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 61.70915222167969,
+      "xMax": 88.41227722167969,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": -5.153124809265137,
+      "xMax": 3.7531251907348633,
+      "yMin": 319.3479919433594,
+      "yMax": 337.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 75.9607162475586,
+      "xMax": 75.9607162475586,
+      "yMin": 304.3479919433594,
+      "yMax": 310.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 151.9214324951172,
+      "xMax": 151.9214324951172,
+      "yMin": 304.3479919433594,
+      "yMax": 310.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 227.88214111328125,
+      "xMax": 227.88214111328125,
+      "yMin": 304.3479919433594,
+      "yMax": 310.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 303.8428649902344,
+      "xMax": 303.8428649902344,
+      "yMin": 304.3479919433594,
+      "yMax": 310.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 379.8035583496094,
+      "xMax": 379.8035583496094,
+      "yMin": 304.3479919433594,
+      "yMax": 310.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 455.7642822265625,
+      "xMax": 455.7642822265625,
+      "yMin": 304.3479919433594,
+      "yMax": 310.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 0,
+      "yMax": 0
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 30.334800720214844,
+      "yMax": 30.334800720214844
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 60.66960144042969,
+      "yMax": 60.66960144042969
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 91.00440216064453,
+      "yMax": 91.00440216064453
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 121.33920288085938,
+      "yMax": 121.33920288085938
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 151.6739959716797,
+      "yMax": 151.6739959716797
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 182.00880432128906,
+      "yMax": 182.00880432128906
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 212.34359741210938,
+      "yMax": 212.34359741210938
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 242.67840576171875,
+      "yMax": 242.67840576171875
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 273.0132141113281,
+      "yMax": 273.0132141113281
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 303.3479919433594,
+      "yMax": 303.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": 303.3479919433594,
+      "yMax": 303.3479919433594
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 0,
+      "yMin": 1,
+      "yMax": 303.3479919433594
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 151.42142639309168,
+      "yMin": 4.550220012664795,
+      "yMax": 25.784579753875732
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 162.77053222805262,
+      "yMin": 34.8850212097168,
+      "yMax": 56.119380950927734
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 169.57999572902918,
+      "yMin": 65.21981811523438,
+      "yMax": 86.45417785644531
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 177.90267334133387,
+      "yMin": 95.55461883544922,
+      "yMax": 116.78897857666016
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 204.38392028957605,
+      "yMin": 125.88941955566406,
+      "yMax": 147.123779296875
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 219.5160614028573,
+      "yMin": 156.22421264648438,
+      "yMax": 177.4585723876953
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 261.12944946438074,
+      "yMin": 186.55902099609375,
+      "yMax": 207.7933807373047
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 416.2339111343026,
+      "yMin": 216.89381408691406,
+      "yMax": 238.128173828125
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 454.06429443508387,
+      "yMin": 247.22862243652344,
+      "yMax": 268.4629821777344
+    },
+    {
+      "cls": "mark-2",
+      "tag": "path",
+      "xMin": 0.10000000149011612,
+      "xMax": 522.1589599624276,
+      "yMin": 277.56341552734375,
+      "yMax": 298.79779052734375
+    },
+    {
+      "cls": "mark-1",
+      "tag": "line",
+      "xMin": 0,
+      "xMax": 529.625,
+      "yMin": -100,
+      "yMax": -100
+    }
+  ],
+  "BarChart3.svg": [
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 224.5,
+      "yMin": 10.5,
+      "yMax": 210.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 44.5,
+      "yMin": 10.5,
+      "yMax": 10.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 224.5,
+      "yMin": 10.5,
+      "yMax": 210.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 44.5,
+      "yMin": 210.5,
+      "yMax": 210.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 54.5,
+      "xMax": 214.5,
+      "yMin": 210.5,
+      "yMax": 215.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 54,
+      "xMax": 64.515625,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 74,
+      "xMax": 84.84375,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 94,
+      "xMax": 105.65625,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 114,
+      "xMax": 125.296875,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 134,
+      "xMax": 144.203125,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 154,
+      "xMax": 163.234375,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 174,
+      "xMax": 185.96875,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 194,
+      "xMax": 205.53125,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "axis-x label",
+      "tag": "text",
+      "xMin": 214,
+      "xMax": 217.796875,
+      "yMin": 208.5,
+      "yMax": 230.5
+    },
+    {
+      "cls": "domain-x",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 224.5,
+      "yMin": 210.5,
+      "yMax": 210.5
+    },
+    {
+      "cls": "title",
+      "tag": "text",
+      "xMin": 131.3515625,
+      "xMax": 137.6484375,
+      "yMin": 228.5,
+      "yMax": 244.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 44.5,
+      "yMin": 10.5,
+      "yMax": 10.5
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 39.5,
+      "xMax": 44.5,
+      "yMin": 10.5,
+      "yMax": 210.5
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": 37.5,
+      "xMax": 47.109375,
+      "yMin": 196.5,
+      "yMax": 218.5
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": 37.5,
+      "xMax": 56.703125,
+      "yMin": 156.5,
+      "yMax": 178.5
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": 37.5,
+      "xMax": 56.703125,
+      "yMin": 116.5,
+      "yMax": 138.5
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": 37.5,
+      "xMax": 56.703125,
+      "yMin": 76.5,
+      "yMax": 98.5
+    },
+    {
+      "cls": "label",
+      "tag": "text",
+      "xMin": 37.5,
+      "xMax": 56.703125,
+      "yMin": 36.5,
+      "yMax": 58.5
+    },
+    {
+      "cls": "title",
+      "tag": "text",
+      "xMin": 37.5,
+      "xMax": 63.125,
+      "yMin": -3.5,
+      "yMax": 18.5
+    },
+    {
+      "cls": "domain-y",
+      "tag": "path",
+      "xMin": 44.5,
+      "xMax": 44.5,
+      "yMin": 10.5,
+      "yMax": 210.5
+    },
+    {
+      "cls": "title",
+      "tag": "text",
+      "xMin": 2.8160018920898438,
+      "xMax": 18.816001892089844,
+      "yMin": 107.1875,
+      "yMax": 113.8125
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 45,
+      "xMax": 63,
+      "yMin": 154,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 65,
+      "xMax": 83,
+      "yMin": 100,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 85,
+      "xMax": 103,
+      "yMin": 124,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 105,
+      "xMax": 123,
+      "yMin": 28,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 125,
+      "xMax": 143,
+      "yMin": 48,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 145,
+      "xMax": 163,
+      "yMin": 104,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 165,
+      "xMax": 183,
+      "yMin": 172,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 185,
+      "xMax": 203,
+      "yMin": 36,
+      "yMax": 210
+    },
+    {
+      "cls": "mark-1",
+      "tag": "path",
+      "xMin": 205,
+      "xMax": 223,
+      "yMin": 106,
+      "yMax": 210
+    }
+  ]
+}
