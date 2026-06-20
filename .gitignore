@@ -1,6 +1,9 @@
 node_modules/
 __pycache__/
 *.pyc
-_*.json
 .DS_Store
 .vite/
+# 评测产物(可由脚本重新生成,体积大)
+predictions*.json
+preds_gt_*.json
+_*.json

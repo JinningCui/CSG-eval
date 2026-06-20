@@ -98,14 +98,15 @@ function pushDownTransforms(element: Element, x: number = 0, y: number = 0) {
 }
 
 function parseTranslate(translate: string) {
-  const regex = /translate\(([-\d.]+)[ ,]([-\d.]+)\)/;
+  // accept "translate(x y)", "translate(x,y)" and "translate(x, y)" (comma+space)
+  const regex = /translate\(\s*([-\d.]+)[\s,]+([-\d.]+)\s*\)/;
   const match = translate.match(regex);
   if (match) {
     const x = parseFloat(match[1]);
     const y = parseFloat(match[2]);
     return { x, y };
   } else {
-    const regexSingle = /translate\(([-\d.]+)\)/;
+    const regexSingle = /translate\(\s*([-\d.]+)\s*\)/;
     const matchSingle = translate.match(regexSingle);
     if (matchSingle) {
       const x = parseFloat(matchSingle[1]);
@@ -434,12 +435,17 @@ function inferContent(svg: SVGSVGElement) {
   console.log("y axis", yAxis);
   console.log("legend", legend);
 
-  const { gridX, gridY, domainX, domainY, markGroups, labels, titles } = classfyRestElements(svg, excludedElements, plotBoundaries, gridLengthRatioThreshold);
+  const { gridX, gridY, domainX, domainY, markGroups, labels, titles, legendTexts } = classfyRestElements(svg, excludedElements, plotBoundaries, gridLengthRatioThreshold);
   console.log("grid", gridX, gridY);
   console.log("domain", domainX, domainY);
   console.log("mark groups", markGroups);
   console.log("labels", labels);
   console.log("titles", titles);
+
+  // position-based legend fallback: right/top-right text with no matched marks
+  if (!legend && legendTexts.length > 0) {
+    legend = new Legend(legendTexts, []);
+  }
 
   return new Plot(titles, markGroups, labels, gridX, gridY, domainX, domainY, xAxis, yAxis, legend, background, svg)
 }
@@ -558,11 +564,61 @@ function conbineGroups<T>(groups1: T[][], groups2: T[][]): T[][] {
   return combinedGroups;
 }
 
+// Parse a path 'd' into straight line segments [x1,y1,x2,y2] (absolute, local
+// coords). Only sub-paths that are "M + a single L/H/V (abs or rel)" are
+// returned; rectangles, curves and multi-segment polylines yield nothing.
+function parsePathSegments(d: string): [number, number, number, number][] {
+  const toks = d.match(/[A-Za-z]|-?\d*\.?\d+(?:[eE]-?\d+)?/g);
+  if (!toks) return [];
+  const segs: [number, number, number, number][] = [];
+  let i = 0, cx = 0, cy = 0, draws = 0, ok = true, cmd = '';
+  let segStart: [number, number] | null = null;
+  let segEnd: [number, number] | null = null;
+  const n = () => parseFloat(toks[i++]);
+  const flush = () => {
+    if (ok && draws === 1 && segStart && segEnd)
+      segs.push([segStart[0], segStart[1], segEnd[0], segEnd[1]]);
+  };
+  // single cumulative pass so relative moves between sub-segments stay correct
+  while (i < toks.length) {
+    if (/[A-Za-z]/.test(toks[i])) { cmd = toks[i++]; }
+    switch (cmd) {
+      case 'M': case 'm': {
+        flush();
+        let x = n(), y = n();
+        if (cmd === 'm') { x += cx; y += cy; }
+        cx = x; cy = y; segStart = [x, y]; draws = 0; ok = true; segEnd = null;
+        cmd = (cmd === 'M') ? 'L' : 'l';
+        break;
+      }
+      case 'L': case 'l': {
+        let x = n(), y = n();
+        if (cmd === 'l') { x += cx; y += cy; }
+        cx = x; cy = y; draws++; segEnd = [x, y]; break;
+      }
+      case 'H': case 'h': { let x = n(); if (cmd === 'h') x += cx; cx = x; draws++; segEnd = [cx, cy]; break; }
+      case 'V': case 'v': { let y = n(); if (cmd === 'v') y += cy; cy = y; draws++; segEnd = [cx, cy]; break; }
+      case 'Z': case 'z': break;
+      default: { ok = false; if (i < toks.length && !/[A-Za-z]/.test(toks[i])) i++; }
+    }
+  }
+  flush();
+  return segs;
+}
+
+function localToSvgMatrix(svg: SVGSVGElement, el: SVGGraphicsElement): DOMMatrix | null {
+  const s = svg.getScreenCTM();
+  const e = el.getScreenCTM();
+  if (!s || !e) return null;
+  return s.inverse().multiply(e);
+}
+
 function findTicks(svg: SVGSVGElement, tickLengthThreshold: number) {
-  const lines = svg.querySelectorAll('line');
   const tickXs: TickWithCoordinates[] = [];
   const tickYs: TickWithCoordinates[] = [];
-  lines.forEach(line => {
+
+  // native <line> ticks
+  svg.querySelectorAll('line').forEach(line => {
     const x1 = parseFloat(line.getAttribute('x1') || '0');
     const y1 = parseFloat(line.getAttribute('y1') || '0');
     const x2 = parseFloat(line.getAttribute('x2') || '0');
@@ -574,7 +630,31 @@ function findTicks(svg: SVGSVGElement, tickLengthThreshold: number) {
       tickYs.push({ element: line, coordinates: getElementCoordinates(svg, line) });
     }
   });
-  // console.log(tickXs, tickYs);
+
+  // <path>-based ticks: each straight short sub-segment counts as a tick.
+  svg.querySelectorAll('path').forEach(path => {
+    const d = path.getAttribute('d');
+    if (!d) return;
+    const segs = parsePathSegments(d);
+    if (segs.length === 0) return;
+    const m = localToSvgMatrix(svg, path as unknown as SVGGraphicsElement);
+    for (const [lx1, ly1, lx2, ly2] of segs) {
+      let p1 = new DOMPoint(lx1, ly1), p2 = new DOMPoint(lx2, ly2);
+      if (m) { p1 = p1.matrixTransform(m); p2 = p2.matrixTransform(m); }
+      const dx = Math.abs(p1.x - p2.x), dy = Math.abs(p1.y - p2.y);
+      const coordinates = {
+        x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2,
+        xMin: Math.min(p1.x, p2.x), xMax: Math.max(p1.x, p2.x),
+        yMin: Math.min(p1.y, p2.y), yMax: Math.max(p1.y, p2.y),
+      };
+      if (dx < 0.1 && dy > 0.1 && dy < tickLengthThreshold) {
+        tickXs.push({ element: path, coordinates });
+      } else if (dy < 0.1 && dx > 0.1 && dx < tickLengthThreshold) {
+        tickYs.push({ element: path, coordinates });
+      }
+    }
+  });
+
   return { tickXs, tickYs };
 }
 
@@ -654,6 +734,33 @@ function getLegendMarkTypeHash(legendMark: LegendMarkWithCoordinates) {
   return `${tagName}_${width}_${height}`;
 }
 
+// DIVI-style flexible pairing: greedy nearest-neighbour assignment between a row
+// of texts and a row of marks/ticks, tolerating count mismatch. Returns the
+// subset of marks that paired one-to-one with a text within the thresholds.
+function pairByNearest<T extends { coordinates: any }>(
+  texts: TextWithCoordinates[], marks: T[], offX: number, offY: number
+): T[] {
+  const cand: [number, number, number][] = [];
+  for (let i = 0; i < texts.length; i++) {
+    for (let j = 0; j < marks.length; j++) {
+      const tc = texts[i].coordinates, mc = marks[j].coordinates;
+      if (closeX(tc, mc, offX) && closeY(tc, mc, offY)) {
+        const dx = tc.x - mc.x, dy = tc.y - mc.y;
+        cand.push([dx * dx + dy * dy, i, j]);
+      }
+    }
+  }
+  cand.sort((a, b) => a[0] - b[0]);
+  const usedText = new Set<number>(), usedMark = new Set<number>();
+  const out: T[] = [];
+  for (const [, i, j] of cand) {
+    if (!usedText.has(i) && !usedMark.has(j)) {
+      usedText.add(i); usedMark.add(j); out.push(marks[j]);
+    }
+  }
+  return out;
+}
+
 function matchTextWithTicksAndLegendMarks(
   textRows: TextWithCoordinates[][],
   tickRows: TickWithCoordinates[][],
@@ -669,58 +776,30 @@ function matchTextWithTicksAndLegendMarks(
 
   for (const textRow of textRows) {
     let matched = false;
-    // match with ticks
+
+    // --- axis: flexible pairing, pick the tick row that aligns with the most
+    //     labels; accept if it covers >= 60% (and >= 2) of the labels.
+    let bestTicks: TickWithCoordinates[] = [];
     for (const tickRow of tickRows) {
-      if (textRow.length != tickRow.length) {
-        continue;
-      }
-      let match = true;
-      for (let i = 0; i < textRow.length; i++) {
-        const text = textRow[i];
-        const tick = tickRow[i];
-        const textCoordinates = text.coordinates;
-        const tickCoordinates = tick.coordinates;
-        if (!closeX(textCoordinates, tickCoordinates, tickLabelOffsetXThreshold)) {
-          match = false;
-          break;
-        }
-        if (!closeY(textCoordinates, tickCoordinates, tickLabelIffsetYThreshold)) {
-          match = false;
-          break;
-        }
-      }
-      if (match) {
-        axisMatched.push({ text: textRow, tick: tickRow });
-        matched = true;
-        break;
-      }
+      const paired = pairByNearest(textRow, tickRow, tickLabelOffsetXThreshold, tickLabelIffsetYThreshold);
+      if (paired.length > bestTicks.length) bestTicks = paired;
+    }
+    const needAxis = Math.max(2, Math.ceil(textRow.length * 0.6));
+    if (bestTicks.length >= needAxis) {
+      axisMatched.push({ text: textRow, tick: bestTicks });
+      matched = true;
     }
     if (matched) {
       continue;
     }
-    // match with legend marks
+
+    // --- legend: flexible pairing, accept rows covering >= half the labels
+    const needLegend = Math.max(1, Math.ceil(textRow.length * 0.5));
     const matchedMarks: LegendMarkWithCoordinates[][] = [];
     for (const legendRow of legendRows) {
-      if (textRow.length != legendRow.length) {
-        continue;
-      }
-      let match = true;
-      for (let i = 0; i < textRow.length; i++) {
-        const text = textRow[i];
-        const mark = legendRow[i];
-        const textCoordinates = text.coordinates;
-        const markCoordinates = mark.coordinates;
-        if (!closeX(textCoordinates, markCoordinates, legendOffsetXThreshold)) {
-          match = false;
-          break;
-        }
-        if (!closeY(textCoordinates, markCoordinates, legendOffsetYThreshold)) {
-          match = false;
-          break;
-        }
-      }
-      if (match) {
-        matchedMarks.push(legendRow);
+      const paired = pairByNearest(textRow, legendRow, legendOffsetXThreshold, legendOffsetYThreshold);
+      if (paired.length >= needLegend) {
+        matchedMarks.push(paired);
         matched = true;
       }
     }
@@ -927,6 +1006,7 @@ function classfyRestElements(svg: SVGSVGElement, excludedElements: Set<Element>,
   const texts = svg.querySelectorAll('text');
   const labels: ElementWithCoordinates[] = [];
   const titles: ElementWithCoordinates[] = [];
+  const legendTexts: ElementWithCoordinates[] = [];
   for (const text of texts) {
     if (excludedElements.has(text)) {
       continue;
@@ -934,12 +1014,18 @@ function classfyRestElements(svg: SVGSVGElement, excludedElements: Set<Element>,
     const coordinates = getElementCoordinates(svg, text);
     if (inside(coordinates, plotBoundaries)) {
       labels.push({ element: text, coordinates });
+      continue;
+    }
+    // outside the plot area: classify by position prior
+    const rightSide = coordinates.xMin >= plotBoundaries.xMax;       // right / top-right
+    if (rightSide) {
+      legendTexts.push({ element: text, coordinates });   // legend usually on the right
     } else {
-      titles.push({ element: text, coordinates });
+      titles.push({ element: text, coordinates });         // top/left/below outside text -> title
     }
   }
 
-  return { gridX, domainX, gridY, domainY, markGroups, labels, titles };
+  return { gridX, domainX, gridY, domainY, markGroups, labels, titles, legendTexts };
 }
 
 function getGridTypeHash(grid: ElementWithCoordinates) {

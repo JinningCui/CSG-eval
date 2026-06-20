@@ -9,10 +9,13 @@ from mapping import norm_gt, norm_pred, UNIFIED
 ANN_DIR = "../VisAnatomy/annotations"
 PRED = sys.argv[1] if len(sys.argv) > 1 else "predictions.json"
 IOU_THRESH = 0.5
+PAD_T = 3.0   # min thickness for thin elements (pixels); set ~0.006 when NORM
 
 
-def pad(box, t=3.0):
+def pad(box, t=None):
     """Give zero-area (thin line/tick) boxes a minimum thickness so IoU works."""
+    if t is None:
+        t = PAD_T
     xMin, xMax, yMin, yMax = box["xMin"], box["xMax"], box["yMin"], box["yMax"]
     if xMax - xMin < t:
         c = (xMin + xMax) / 2; xMin, xMax = c - t / 2, c + t / 2
@@ -57,6 +60,37 @@ def _is_text(tag):
     return str(tag).lower() in ("text", "tspan")
 
 
+def normalize_bboxes(items):
+    """Min-max normalize a set of bboxes to [0,1] using their own union extent.
+    Cancels a global scale+translate, so predictions in 512-normalized space can
+    be matched against GT in original-coordinate space (cleaning is ~uniform
+    scale). Mutates copies; returns new list."""
+    if not items:
+        return items
+    rxMin = min(it["xMin"] for it in items); rxMax = max(it["xMax"] for it in items)
+    ryMin = min(it["yMin"] for it in items); ryMax = max(it["yMax"] for it in items)
+    rw = (rxMax - rxMin) or 1.0; rh = (ryMax - ryMin) or 1.0
+    # frame = content extent, excluding full-canvas-spanning elements (backgrounds)
+    core = [it for it in items
+            if not ((it["xMax"] - it["xMin"]) >= 0.9 * rw
+                    and (it["yMax"] - it["yMin"]) >= 0.9 * rh)]
+    if not core:
+        core = items
+    xMin = min(it["xMin"] for it in core); xMax = max(it["xMax"] for it in core)
+    yMin = min(it["yMin"] for it in core); yMax = max(it["yMax"] for it in core)
+    w = (xMax - xMin) or 1.0
+    h = (yMax - yMin) or 1.0
+    out = []
+    for it in items:
+        n = dict(it)
+        n["xMin"] = (it["xMin"] - xMin) / w
+        n["xMax"] = (it["xMax"] - xMin) / w
+        n["yMin"] = (it["yMin"] - yMin) / h
+        n["yMax"] = (it["yMax"] - yMin) / h
+        out.append(n)
+    return out
+
+
 def match(preds, gts):
     """Greedy IoU matching, text<->text and shape<->shape only.
     Returns (pairs, unmatched_pred, unmatched_gt)."""
@@ -81,6 +115,10 @@ def match(preds, gts):
 def main():
     import re
     QUIET = os.environ.get("QUIET")
+    NORM = os.environ.get("NORM")
+    if NORM:
+        global PAD_T
+        PAD_T = 0.006   # ~3px / 512 in [0,1] normalized space
     preds_all = json.load(open(PRED))
     confusion = collections.Counter()   # (gt_u, pred_u)
     tot_match = tot_correct = 0
@@ -92,6 +130,9 @@ def main():
         if not os.path.exists(ann):
             continue
         gts = gt_elements(name)
+        if NORM:   # per-chart min-max so 512-rescaled preds align with original-coord GT
+            preds = normalize_bboxes(preds)
+            gts = normalize_bboxes(gts)
         pairs, up, ug = match(preds, gts)
         correct = sum(1 for i, j, _ in pairs
                       if norm_pred(preds[i]["cls"]) == gts[j]["u"])

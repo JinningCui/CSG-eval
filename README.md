@@ -5,11 +5,27 @@ Evaluation harness for **svg-chart-reuse**, a tool that infers semantic roles
 elements. This repo benchmarks the tool against two labeled corpora and reports
 per-component accuracy.
 
+## What's new (this update)
+
+- **Improved component recognition** in `svg-chart-reuse/src/main.ts`:
+  - Path-geometry tick detection (`parsePathSegments` + `findTicks`): recovers
+    individual ticks from merged multi-segment `<path>` elements.
+  - DIVI-style flexible pairing (`pairByNearest`): sort + nearest-neighbour
+    label↔tick matching, tolerating count mismatch (replaces strict equal-length).
+  - Position priors for title (top) / legend (right) and a `translate(x, y)`
+    parse fix.
+- **SVG cleaning + SVGO pipeline** under `rebuttal/` that produces the
+  normalized corpus the tool is evaluated on.
+- **DIVI comparison**: `eval/divi_runner.mjs` drives uwdata/divi over the same
+  charts; results in `eval/comparison_*.csv` and analysis in
+  `eval/method_advantages_vs_DIVI.md`.
+
 ## Layout
 
 ```
 svg-chart-reuse/   The tool under test (Vite + TS). Runs in the browser.
-eval/              Evaluation scripts (Node + Python).
+eval/              Evaluation scripts (Node + Python) + comparison CSVs.
+rebuttal/          SVG cleaning (generate_syntactic_svg.py) + SVGO (svgo_optimizer.js).
 ```
 
 > `svg-chart-reuse/` is vendored from the upstream project

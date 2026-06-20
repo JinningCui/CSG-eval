@@ -1,0 +1,7 @@
+component,ours_type_f1,divi_type_f1,ours_count_acc,divi_count_acc
+mark,0.9875,0.8923,0.5921,0.4553
+axis-tick,0.8284,0.6876,0.4796,0.3921
+axis-label,0.0215,0.0099,0.004,0.0017
+legend,0.3894,0.336,0.1318,0.0765
+title,0.102,0.0299,0.0444,0.007
+AVERAGE,0.4658,0.3911,0.2503,0.1865

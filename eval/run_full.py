@@ -8,7 +8,9 @@ import os, json, shutil, subprocess, math
 ROOT = os.path.dirname(os.path.abspath(__file__))
 TOOL = os.path.join(ROOT, "..", "svg-chart-reuse")
 INFER = os.path.join(TOOL, "infer_results")
-SVG_DIR = os.path.join(ROOT, "..", "VisAnatomy", "charts_svg")
+SVG_DIR = os.environ.get(
+    "SVG_DIR", os.path.join(ROOT, "..", "VisAnatomy", "charts_svg"))
+OUT_FILE = os.environ.get("OUT_FILE", "predictions_full.json")
 BATCH = int(os.environ.get("BATCH", "40"))
 
 files = [l.strip() for l in open(os.path.join(ROOT, "cartesian_list.txt")) if l.strip()]
@@ -38,6 +40,6 @@ for b in range(n_batches):
     print("  " + r.stdout.strip().splitlines()[-1])
     merged.update(json.load(open(out)))
 
-with open(os.path.join(ROOT, "predictions_full.json"), "w") as f:
+with open(os.path.join(ROOT, OUT_FILE), "w") as f:
     json.dump(merged, f)
-print(f"\nmerged {len(merged)} charts -> predictions_full.json")
+print(f"\nmerged {len(merged)} charts -> {OUT_FILE}")
