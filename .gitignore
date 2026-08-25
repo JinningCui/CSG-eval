@@ -7,3 +7,17 @@ __pycache__/
 predictions*.json
 preds_gt_*.json
 _*.json
+comparison*.csv
+component_report.csv
+
+# Generated CSG artifacts
+CSG/tagging/output/
+CSG/tagging/case.zip
+CSG/graph/case/*_scene_graph.json
+CSG/graph/case/*_scenegraph.json
+CSG/graph/case/*_dependencies.json
+CSG/graph/case/*_modified.svg
+CSG/graph/modified*
+CSG/graph/new_*
+CSG/graph/no_graph_*
+CSG/graph/our_*
