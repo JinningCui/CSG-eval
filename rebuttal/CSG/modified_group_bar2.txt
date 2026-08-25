@@ -1,0 +1,4 @@
+```svg
+<rect fill="#ffcc00" stroke-width="1.1" stroke="#333" rx="0" ry="0" width="33.4" height="64.5" x="180.5" y="221.6" font-size="9.1"/>
+<rect fill="#ffcc00" stroke-width="1.1" stroke="#333" rx="0" ry="0" width="33.4" height="166.5" x="213.9" y="119.7" font-size="9.1"/>
+```

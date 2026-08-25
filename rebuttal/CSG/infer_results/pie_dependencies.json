@@ -1,0 +1,470 @@
+{
+  "dependencies": {
+    "data_to_visual_mapping": {
+      "global_scale": [
+        {
+          "trigger": [
+            "chart.marks[0].marks[*].geometry.outerRadius",
+            "chart.marks[0].marks[*].geometry.center",
+            "chart.marks[0].labels[*].position"
+          ],
+          "elements": [
+            "chart",
+            "chart.backgrounds[1]",
+            "chart.marks[0]"
+          ],
+          "attributes": [
+            "viewBox.width",
+            "viewBox.height",
+            "polar_center.x",
+            "polar_center.y",
+            "outerRadius"
+          ],
+          "semantics": "All arc marks in mark_group s0 and their labels share a single polar coordinate system. If the center or radius of this system changes, all arc path commands and label positions MUST be recomputed consistently so that the pie remains circular and labels stay correctly attached to their slices.",
+          "element_refs": [
+            {
+              "name": "svg_chart_root",
+              "scene_path": "chart",
+              "svg_selector": "svg",
+              "attributes": {
+                "viewBox": {
+                  "minX": 0.0,
+                  "minY": 112.0,
+                  "width": 512.0,
+                  "height": 288.0
+                },
+                "width": 1280,
+                "height": 720
+              }
+            },
+            {
+              "name": "chart_frame",
+              "scene_path": "chart.backgrounds[1]",
+              "svg_selector": "g.scaler > rect[fill='none']",
+              "attributes": {
+                "geometry.width": 512.7,
+                "geometry.height": 320.4,
+                "style.stroke_width": 0.7
+              }
+            },
+            {
+              "name": "pie_group_s0",
+              "scene_path": "chart.marks[0]",
+              "svg_selector": "g.canvas > g.chart > g.series.s0",
+              "attributes": {
+                "polar_center.x": 175.3,
+                "polar_center.y": 155.8,
+                "outerRadius": 120.2,
+                "group_transform": "translate(0,96.1)"
+              }
+            }
+          ]
+        }
+      ],
+      "proportionality": [
+        {
+          "trigger": [
+            "chart.marks[0].marks[0].data.value",
+            "chart.marks[0].marks[1].data.value",
+            "chart.marks[0].marks[*].geometry.angle",
+            "chart.marks[0].labels[*].content.label"
+          ],
+          "elements": [
+            "chart.marks[0].marks[0]",
+            "chart.marks[0].marks[1]",
+            "chart.marks[0].labels[0]",
+            "chart.marks[0].labels[1]"
+          ],
+          "attributes": [
+            "data.value",
+            "geometry.angle_fraction",
+            "geometry.sweep_angle_deg",
+            "text.content.label"
+          ],
+          "semantics": "The sweep angle of each pie slice MUST be proportional to its data value, and the percentage shown in each label MUST match that same proportion. The two slices' angle fractions MUST sum to 1.0 (360°). Changing a slice's data value requires recomputing both arc angles and the percentage text for all slices.",
+          "element_refs": [
+            {
+              "name": "answered_arc",
+              "scene_path": "chart.marks[0].marks[0]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#12416c']",
+              "attributes": {
+                "style.fill": "#12416c",
+                "style.stroke": "#ffffff",
+                "path.d": "M 175.3 35.6 a 120.2 120.2 0 1 1 -105.6 62.1 l 105.6 50 z",
+                "geometry.outerRadius": 120.2,
+                "data.value": 82,
+                "geometry.angle_fraction": 0.82,
+                "geometry.sweep_angle_deg": 295.2
+              }
+            },
+            {
+              "name": "not_answered_arc",
+              "scene_path": "chart.marks[0].marks[1]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#f3711d']",
+              "attributes": {
+                "style.fill": "#f3711d",
+                "style.stroke": "#ffffff",
+                "path.d": "M 69.7 97.7 A 120.2 120.2 0 0 1 175.3 35.6 V 155.8 z",
+                "geometry.outerRadius": 120.2,
+                "data.value": 18,
+                "geometry.angle_fraction": 0.18,
+                "geometry.sweep_angle_deg": 64.8
+              }
+            },
+            {
+              "name": "answered_label",
+              "scene_path": "chart.marks[0].labels[0]",
+              "svg_selector": "g.series.s0 > text.data-label:nth-of-type(1)",
+              "attributes": {
+                "position.x": 261.2,
+                "position.y": 251.5,
+                "content.label": "Answered (82%)",
+                "style.fill": "#000000",
+                "font-size": 12.8
+              }
+            },
+            {
+              "name": "not_answered_label",
+              "scene_path": "chart.marks[0].labels[1]",
+              "svg_selector": "g.series.s0 > text.data-label[text-anchor='end']",
+              "attributes": {
+                "position.x": 78.2,
+                "position.y": 42.3,
+                "content.label": "Not Answered (18%)",
+                "style.fill": "#000000",
+                "font-size": 12.8,
+                "text-anchor": "end"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "spatial_distribution": {
+      "alignment": [],
+      "intra_group_spacing": [],
+      "stacking": []
+    },
+    "layout_cascade": {
+      "bottom_up_expansion": [
+        {
+          "trigger": [
+            "chart.marks[0].marks[*].geometry.outerRadius",
+            "chart.marks[0].labels[*].position"
+          ],
+          "elements": [
+            "chart.marks[0]",
+            "chart.backgrounds[1]",
+            "chart"
+          ],
+          "attributes": [
+            "outerRadius",
+            "backgrounds[1].geometry.width",
+            "backgrounds[1].geometry.height",
+            "viewBox.width",
+            "viewBox.height"
+          ],
+          "semantics": "The pie's outer radius (120.2) and label offsets must fit within the framed plotting area (background[1]) and ultimately within the chart's viewBox. If slices are made larger (e.g., increasing outerRadius or moving labels further out), the chart frame and/or viewBox MUST expand or the pie and labels MUST be scaled down so nothing is clipped.",
+          "element_refs": [
+            {
+              "name": "pie_group_s0",
+              "scene_path": "chart.marks[0]",
+              "svg_selector": "g.canvas > g.chart > g.series.s0",
+              "attributes": {
+                "outerRadius": 120.2,
+                "labels_bbox_approx": {
+                  "answered_label.position": {
+                    "x": 261.2,
+                    "y": 251.5
+                  },
+                  "not_answered_label.position": {
+                    "x": 78.2,
+                    "y": 42.3
+                  }
+                }
+              }
+            },
+            {
+              "name": "chart_frame",
+              "scene_path": "chart.backgrounds[1]",
+              "svg_selector": "g.scaler > rect[fill='none']",
+              "attributes": {
+                "geometry.width": 512.7,
+                "geometry.height": 320.4
+              }
+            },
+            {
+              "name": "svg_chart_root",
+              "scene_path": "chart",
+              "svg_selector": "svg",
+              "attributes": {
+                "viewBox.width": 512.0,
+                "viewBox.height": 288.0
+              }
+            }
+          ]
+        }
+      ],
+      "top_down_compression": [
+        {
+          "trigger": [
+            "chart.backgrounds[1].geometry.width",
+            "chart.backgrounds[1].geometry.height",
+            "chart.viewBox.width",
+            "chart.viewBox.height"
+          ],
+          "elements": [
+            "chart",
+            "chart.backgrounds[1]",
+            "chart.marks[0]"
+          ],
+          "attributes": [
+            "viewBox.width",
+            "viewBox.height",
+            "backgrounds[1].geometry.width",
+            "backgrounds[1].geometry.height",
+            "outerRadius"
+          ],
+          "semantics": "If the overall chart or framed plotting area is reduced (e.g., smaller viewBox or frame rectangle), the pie radius and label positions MUST be scaled down proportionally so the pie and labels still fit comfortably within the new bounds without overlapping the frame or being clipped.",
+          "element_refs": [
+            {
+              "name": "svg_chart_root",
+              "scene_path": "chart",
+              "svg_selector": "svg",
+              "attributes": {
+                "viewBox": {
+                  "minX": 0.0,
+                  "minY": 112.0,
+                  "width": 512.0,
+                  "height": 288.0
+                }
+              }
+            },
+            {
+              "name": "chart_frame",
+              "scene_path": "chart.backgrounds[1]",
+              "svg_selector": "g.scaler > rect[fill='none']",
+              "attributes": {
+                "geometry.width": 512.7,
+                "geometry.height": 320.4
+              }
+            },
+            {
+              "name": "pie_group_s0",
+              "scene_path": "chart.marks[0]",
+              "svg_selector": "g.canvas > g.chart > g.series.s0",
+              "attributes": {
+                "outerRadius": 120.2
+              }
+            }
+          ]
+        }
+      ],
+      "collision_avoidance": [
+        {
+          "trigger": [
+            "chart.marks[0].labels[*].content.label",
+            "chart.marks[0].labels[*].position",
+            "chart.marks[0].marks[*].geometry.outerRadius"
+          ],
+          "elements": [
+            "chart.marks[0].labels[0]",
+            "chart.marks[0].labels[1]",
+            "chart.marks[0].marks[0]",
+            "chart.marks[0].marks[1]"
+          ],
+          "attributes": [
+            "text.bounding_box",
+            "text.position",
+            "arc.outerRadius",
+            "arc.polar_center"
+          ],
+          "semantics": "Label text bounding boxes MUST NOT overlap each other or intrude into the interior of their associated pie slices beyond an acceptable margin. If label content becomes longer, font size increases, or slice radius changes, label positions MUST be adjusted (e.g., moved radially outward or around the circle) so labels remain legible and non-overlapping.",
+          "element_refs": [
+            {
+              "name": "answered_label",
+              "scene_path": "chart.marks[0].labels[0]",
+              "svg_selector": "g.series.s0 > text.data-label:nth-of-type(1)",
+              "attributes": {
+                "position": {
+                  "x": 261.2,
+                  "y": 251.5
+                },
+                "font-size": 12.8,
+                "content.label": "Answered (82%)",
+                "bounding_box_approx": {
+                  "x": 261.2,
+                  "y": 251.5,
+                  "width": null,
+                  "height": 12.8
+                }
+              }
+            },
+            {
+              "name": "not_answered_label",
+              "scene_path": "chart.marks[0].labels[1]",
+              "svg_selector": "g.series.s0 > text.data-label[text-anchor='end']",
+              "attributes": {
+                "position": {
+                  "x": 78.2,
+                  "y": 42.3
+                },
+                "font-size": 12.8,
+                "content.label": "Not Answered (18%)",
+                "text-anchor": "end",
+                "bounding_box_approx": {
+                  "x": 78.2,
+                  "y": 42.3,
+                  "width": null,
+                  "height": 25.6
+                }
+              }
+            },
+            {
+              "name": "answered_arc",
+              "scene_path": "chart.marks[0].marks[0]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#12416c']",
+              "attributes": {
+                "polar_center": {
+                  "x": 175.3,
+                  "y": 155.8
+                },
+                "outerRadius": 120.2
+              }
+            },
+            {
+              "name": "not_answered_arc",
+              "scene_path": "chart.marks[0].marks[1]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#f3711d']",
+              "attributes": {
+                "polar_center": {
+                  "x": 175.3,
+                  "y": 155.8
+                },
+                "outerRadius": 120.2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "semantic_and_style": {
+      "category_binding": [
+        {
+          "trigger": [
+            "data_category='Answered'",
+            "data_category='Not Answered'"
+          ],
+          "elements": [
+            "chart.marks[0].marks[0]",
+            "chart.marks[0].labels[0]",
+            "chart.marks[0].marks[1]",
+            "chart.marks[0].labels[1]"
+          ],
+          "attributes": [
+            "style.fill",
+            "style.stroke",
+            "text.content.label"
+          ],
+          "semantics": "For each response category, the pie slice fill and its corresponding label text MUST remain consistently bound. The 'Answered' category is encoded by the dark blue slice (#12416c) and the 'Answered (82%)' label, while 'Not Answered' is encoded by the orange slice (#f3711d) and the 'Not Answered (18%)' label. Any style change to a category MUST be applied uniformly to both its mark and its label.",
+          "element_refs": [
+            {
+              "name": "answered_category_slice",
+              "scene_path": "chart.marks[0].marks[0]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#12416c']",
+              "attributes": {
+                "data_category": "Answered",
+                "style.fill": "#12416c",
+                "style.stroke": "#ffffff"
+              }
+            },
+            {
+              "name": "answered_category_label",
+              "scene_path": "chart.marks[0].labels[0]",
+              "svg_selector": "g.series.s0 > text.data-label:nth-of-type(1)",
+              "attributes": {
+                "data_category": "Answered",
+                "content.label": "Answered (82%)",
+                "style.fill": "#000000"
+              }
+            },
+            {
+              "name": "not_answered_category_slice",
+              "scene_path": "chart.marks[0].marks[1]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#f3711d']",
+              "attributes": {
+                "data_category": "Not Answered",
+                "style.fill": "#f3711d",
+                "style.stroke": "#ffffff"
+              }
+            },
+            {
+              "name": "not_answered_category_label",
+              "scene_path": "chart.marks[0].labels[1]",
+              "svg_selector": "g.series.s0 > text.data-label[text-anchor='end']",
+              "attributes": {
+                "data_category": "Not Answered",
+                "content.label": "Not Answered (18%)",
+                "style.fill": "#000000"
+              }
+            }
+          ]
+        }
+      ],
+      "z_order_occlusion": [
+        {
+          "trigger": [
+            "chart.marks[0].marks[*].data.value",
+            "chart.marks[0].marks[*].state.highlight"
+          ],
+          "elements": [
+            "chart.marks[0].marks[0]",
+            "chart.marks[0].marks[1]",
+            "chart.marks[0].labels[0]",
+            "chart.marks[0].labels[1]"
+          ],
+          "attributes": [
+            "dom_index"
+          ],
+          "semantics": "Smaller slices or highlighted slices SHOULD appear later in the DOM order so they render on top along shared boundaries. In the current SVG, the smaller 'Not Answered' slice (18%) is drawn after the larger 'Answered' slice (82%), ensuring its edge is visible. Text labels are drawn after both slices so that labels are never occluded by arcs. If slice sizes or highlighting change, DOM order MAY need to be updated to preserve this visibility rule.",
+          "element_refs": [
+            {
+              "name": "answered_arc",
+              "scene_path": "chart.marks[0].marks[0]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#12416c']",
+              "attributes": {
+                "data.value": 82,
+                "dom_index": 0
+              }
+            },
+            {
+              "name": "not_answered_arc",
+              "scene_path": "chart.marks[0].marks[1]",
+              "svg_selector": "g.series.s0 > path.arc[fill='#f3711d']",
+              "attributes": {
+                "data.value": 18,
+                "dom_index": 1
+              }
+            },
+            {
+              "name": "answered_label",
+              "scene_path": "chart.marks[0].labels[0]",
+              "svg_selector": "g.series.s0 > text.data-label:nth-of-type(1)",
+              "attributes": {
+                "dom_index": 2
+              }
+            },
+            {
+              "name": "not_answered_label",
+              "scene_path": "chart.marks[0].labels[1]",
+              "svg_selector": "g.series.s0 > text.data-label[text-anchor='end']",
+              "attributes": {
+                "dom_index": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1292 @@
+{
+  "chart": {
+    "type": "chart",
+    "titles": [
+      {
+        "type": "text",
+        "role": "chart_title",
+        "content": {
+          "text": "Quantum Cluster Compute Workload & Error Rates"
+        },
+        "style": {
+          "fill": "#ebe9dd",
+          "stroke-width": 0.7,
+          "font-size": 14.1
+        },
+        "position": {
+          "x": 121.6,
+          "y": 38.0
+        }
+      },
+      {
+        "type": "text",
+        "role": "chart_title",
+        "content": {
+          "text": "Q4 FY23 - Q3 FY24 (Global Nodes)"
+        },
+        "style": {
+          "fill": "#ebe9dd",
+          "stroke-width": 0.7,
+          "font-size": 10.3
+        },
+        "position": {
+          "x": 184.6,
+          "y": 46.8
+        }
+      }
+    ],
+    "backgrounds": [
+      {
+        "type": "background",
+        "style": {
+          "fill": "#ffffff"
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "type": "background",
+        "style": {
+          "fill": "#141620",
+          "stroke-width": 0.7
+        },
+        "geometry": {
+          "x": 0,
+          "y": 112.3,
+          "width": 512.7,
+          "height": 288.4
+        }
+      }
+    ],
+    "axes": [
+      {
+        "type": "axis",
+        "orientation": "y",
+        "scale_ref": null,
+        "components": {
+          "domain": {
+            "type": "line",
+            "style": {
+              "stroke": "#ebe9dd",
+              "stroke-width": 1.3,
+              "fill": "none"
+            },
+            "position": {
+              "x1": 56.4,
+              "y1": 46.1,
+              "x2": 56.4,
+              "y2": 198.4
+            }
+          },
+          "ticks": [
+            {
+              "type": "line",
+              "position": {
+                "x1": 56.4,
+                "y1": 198.4,
+                "x2": 51.9,
+                "y2": 198.4
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 56.4,
+                "y1": 169.6,
+                "x2": 51.9,
+                "y2": 169.6
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 56.4,
+                "y1": 140.7,
+                "x2": 51.9,
+                "y2": 140.7
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 56.4,
+                "y1": 111.8,
+                "x2": 51.9,
+                "y2": 111.8
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 56.4,
+                "y1": 83.0,
+                "x2": 51.9,
+                "y2": 83.0
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 56.4,
+                "y1": 54.1,
+                "x2": 51.9,
+                "y2": 54.1
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            }
+          ],
+          "labels": [
+            {
+              "type": "text",
+              "content": {
+                "text": "0"
+              },
+              "position": {
+                "x": 50.0,
+                "y": 205.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "200"
+              },
+              "position": {
+                "x": 50.0,
+                "y": 176.6
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "400"
+              },
+              "position": {
+                "x": 50.0,
+                "y": 147.7
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "600"
+              },
+              "position": {
+                "x": 50.0,
+                "y": 118.8
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "800"
+              },
+              "position": {
+                "x": 50.0,
+                "y": 90.0
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "1000"
+              },
+              "position": {
+                "x": 50.0,
+                "y": 61.1
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "end"
+              }
+            }
+          ],
+          "title": {
+            "type": "text",
+            "content": {
+              "text": "PeakFLOPS (VPIL OPS)"
+            },
+            "position": {
+              "transform": "rotate(-90 75.6 59.6)",
+              "dy": 16
+            },
+            "style": {
+              "fill": "#ebe9dd",
+              "font-size": 10.3,
+              "text-anchor": "middle"
+            }
+          }
+        }
+      },
+      {
+        "type": "axis",
+        "orientation": "x",
+        "scale_ref": null,
+        "components": {
+          "domain": {
+            "type": "line",
+            "style": {
+              "stroke": "#ebe9dd",
+              "stroke-width": 1.3,
+              "fill": "none"
+            },
+            "position": {
+              "x1": 57.0,
+              "y1": 199.0,
+              "x2": 596.7,
+              "y2": 199.0
+            }
+          },
+          "ticks": [
+            {
+              "type": "line",
+              "position": {
+                "x1": 76.3,
+                "y1": 199.0,
+                "x2": 76.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 116.3,
+                "y1": 199.0,
+                "x2": 116.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 156.3,
+                "y1": 199.0,
+                "x2": 156.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 196.3,
+                "y1": 199.0,
+                "x2": 196.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 236.3,
+                "y1": 199.0,
+                "x2": 236.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 276.3,
+                "y1": 199.0,
+                "x2": 276.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 316.3,
+                "y1": 199.0,
+                "x2": 316.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 356.3,
+                "y1": 199.0,
+                "x2": 356.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 396.3,
+                "y1": 199.0,
+                "x2": 396.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 436.3,
+                "y1": 199.0,
+                "x2": 436.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 476.3,
+                "y1": 199.0,
+                "x2": 476.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x1": 516.3,
+                "y1": 199.0,
+                "x2": 516.3,
+                "y2": 203.5
+              },
+              "style": {
+                "stroke": "#333",
+                "stroke-width": 0.7
+              }
+            }
+          ],
+          "labels": [
+            {
+              "type": "text",
+              "content": {
+                "text": "Jan"
+              },
+              "position": {
+                "x": 76.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Feb"
+              },
+              "position": {
+                "x": 116.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Mar"
+              },
+              "position": {
+                "x": 156.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Apr"
+              },
+              "position": {
+                "x": 196.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "May"
+              },
+              "position": {
+                "x": 236.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Jun"
+              },
+              "position": {
+                "x": 276.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Jul"
+              },
+              "position": {
+                "x": 316.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Aug"
+              },
+              "position": {
+                "x": 356.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Sep"
+              },
+              "position": {
+                "x": 396.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Oct"
+              },
+              "position": {
+                "x": 436.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Nov"
+              },
+              "position": {
+                "x": 476.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "Dec"
+              },
+              "position": {
+                "x": 516.3,
+                "y": 212.4
+              },
+              "style": {
+                "fill": "#ebe9dd",
+                "font-size": 9,
+                "text-anchor": "middle"
+              }
+            }
+          ],
+          "title": {
+            "type": "text",
+            "content": {
+              "text": "Operation Month"
+            },
+            "position": {
+              "x": 275.6,
+              "y": 239.3
+            },
+            "style": {
+              "fill": "#ebe9dd",
+              "font-size": 10.3,
+              "text-anchor": "middle"
+            }
+          }
+        }
+      }
+    ],
+    "legend": {
+      "type": "legend",
+      "title": {
+        "type": "text",
+        "content": {},
+        "style": {},
+        "position": {}
+      },
+      "items": [
+        {
+          "type": "legend_item",
+          "data_key": "Total Workload",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {
+              "width": 9.0,
+              "height": 9.0
+            },
+            "position": {
+              "x": 125.2,
+              "y": 252.9
+            }
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "text": "Total Workload"
+            },
+            "style": {
+              "fill": "#ebe9dd",
+              "font-size": 9
+            },
+            "position": {
+              "x": 149.6,
+              "y": 265.8
+            }
+          }
+        },
+        {
+          "type": "legend_item",
+          "data_key": "Max Capacity",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#f213b5",
+              "stroke-width": 0.7
+            },
+            "geometry": {
+              "width": 9.0,
+              "height": 9.0
+            },
+            "position": {
+              "x": 236.1,
+              "y": 252.9
+            }
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "text": "Max Capacity"
+            },
+            "style": {
+              "fill": "#ebe9dd",
+              "font-size": 9
+            },
+            "position": {
+              "x": 260.5,
+              "y": 265.8
+            }
+          }
+        },
+        {
+          "type": "legend_item",
+          "data_key": "Error Overhead",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#7d2ce9",
+              "stroke-width": 0.7
+            },
+            "geometry": {
+              "width": 9.0,
+              "height": 9.0
+            },
+            "position": {
+              "x": 328.8,
+              "y": 252.9
+            }
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "text": "Error Overhead"
+            },
+            "style": {
+              "fill": "#ebe9dd",
+              "font-size": 9
+            },
+            "position": {
+              "x": 353.2,
+              "y": 265.8
+            }
+          }
+        }
+      ]
+    },
+    "grids": {
+      "gridX": [],
+      "gridY": [
+        {
+          "type": "line",
+          "position": {
+            "x1": 57.0,
+            "y1": 198.4,
+            "x2": 496.1,
+            "y2": 198.4
+          },
+          "style": {
+            "stroke": "#ebe9dd",
+            "stroke-width": 0.6,
+            "stroke-opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x1": 57.0,
+            "y1": 169.5,
+            "x2": 496.1,
+            "y2": 169.5
+          },
+          "style": {
+            "stroke": "#ebe9dd",
+            "stroke-width": 0.6,
+            "stroke-opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x1": 57.0,
+            "y1": 140.7,
+            "x2": 496.1,
+            "y2": 140.7
+          },
+          "style": {
+            "stroke": "#ebe9dd",
+            "stroke-width": 0.6,
+            "stroke-opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x1": 57.0,
+            "y1": 111.8,
+            "x2": 496.1,
+            "y2": 111.8
+          },
+          "style": {
+            "stroke": "#ebe9dd",
+            "stroke-width": 0.6,
+            "stroke-opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x1": 57.0,
+            "y1": 83.0,
+            "x2": 496.1,
+            "y2": 83.0
+          },
+          "style": {
+            "stroke": "#ebe9dd",
+            "stroke-width": 0.6,
+            "stroke-opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x1": 57.0,
+            "y1": 54.1,
+            "x2": 496.1,
+            "y2": 54.1
+          },
+          "style": {
+            "stroke": "#ebe9dd",
+            "stroke-width": 0.6,
+            "stroke-opacity": 0.3
+          }
+        }
+      ]
+    },
+    "marks": [
+      {
+        "type": "mark_group",
+        "mark_type": "rect",
+        "data_key": "Total Workload",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "x": 63.7,
+              "y": 122.3
+            },
+            "size": {
+              "width": 21.5,
+              "height": 76.2
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 89.4,
+              "y": 107.7
+            },
+            "size": {
+              "width": 21.5,
+              "height": 90.7
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 115.1,
+              "y": 114.3
+            },
+            "size": {
+              "width": 21.5,
+              "height": 84.1
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 140.8,
+              "y": 103.9
+            },
+            "size": {
+              "width": 21.5,
+              "height": 94.6
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 166.5,
+              "y": 97.2
+            },
+            "size": {
+              "width": 21.5,
+              "height": 101.2
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 192.2,
+              "y": 89.7
+            },
+            "size": {
+              "width": 21.5,
+              "height": 108.7
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 217.9,
+              "y": 75.0
+            },
+            "size": {
+              "width": 21.5,
+              "height": 123.4
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 243.6,
+              "y": 71.1
+            },
+            "size": {
+              "width": 21.5,
+              "height": 127.3
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 269.3,
+              "y": 61.6
+            },
+            "size": {
+              "width": 21.5,
+              "height": 136.8
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 295.0,
+              "y": 61.6
+            },
+            "size": {
+              "width": 21.5,
+              "height": 136.8
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 320.7,
+              "y": 71.1
+            },
+            "size": {
+              "width": 21.5,
+              "height": 127.3
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 346.4,
+              "y": 86.8
+            },
+            "size": {
+              "width": 21.5,
+              "height": 111.6
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 372.1,
+              "y": 97.2
+            },
+            "size": {
+              "width": 21.5,
+              "height": 101.2
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 397.8,
+              "y": 103.9
+            },
+            "size": {
+              "width": 21.5,
+              "height": 94.6
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 423.5,
+              "y": 99.9
+            },
+            "size": {
+              "width": 21.5,
+              "height": 98.5
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 449.2,
+              "y": 89.7
+            },
+            "size": {
+              "width": 21.5,
+              "height": 108.7
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 474.9,
+              "y": 97.2
+            },
+            "size": {
+              "width": 21.5,
+              "height": 101.2
+            },
+            "style": {
+              "fill": "#1a9cf0",
+              "stroke-width": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      },
+      {
+        "type": "mark_group",
+        "mark_type": "line",
+        "data_key": "Max Capacity",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "transform": "translate(55.8 46.1)"
+            },
+            "size": {},
+            "style": {
+              "fill": "none",
+              "stroke": "#f213b5",
+              "stroke-width": 1.9
+            },
+            "geometry": {
+              "d": "M 7.9 76.2 h 43.0 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 L 162.1 57.8 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6"
+            },
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "transform": "translate(55.8 46.1)"
+            },
+            "size": {},
+            "style": {
+              "fill": "none",
+              "stroke": "#f213b5",
+              "stroke-width": 1.9
+            },
+            "geometry": {
+              "d": "M 7.9 152.3 h 43.0 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 -4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 4.9 h 27.6 l 13.8 -4.9 h 27.6"
+            },
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      },
+      {
+        "type": "mark_group",
+        "mark_type": "line",
+        "data_key": "Error Overhead",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "transform": "translate(55.8 46.1)"
+            },
+            "size": {},
+            "style": {
+              "fill": "none",
+              "stroke": "#7d2ce9",
+              "stroke-width": 1.9
+            },
+            "geometry": {
+              "d": "m 7.9 144.4 l 13.8 -4.9 l 13.8 4.9 h 27.6 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 -4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 4.9 l 13.8 -4.9 l 13.8 -4.9"
+            },
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      }
+    ]
+  }
+}

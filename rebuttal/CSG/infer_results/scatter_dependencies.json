@@ -1,0 +1,834 @@
+{
+  "dependencies": {
+    "data_to_visual_mapping": {
+      "global_scale": [
+        {
+          "trigger": [
+            "data_domain.temperature",
+            "axis.x.domain.position"
+          ],
+          "elements": [
+            "axis.x.domain",
+            "axis.x.ticks",
+            "axis.x.labels",
+            "gridX",
+            "mark_group.point"
+          ],
+          "attributes": [
+            "data_domain_min",
+            "data_domain_max",
+            "pixel_domain_min",
+            "pixel_domain_max",
+            "coordinate_system"
+          ],
+          "semantics": "IF x-axis tick labels or domain endpoints change, THEN all x positions of grid lines and marks MUST be recomputed using the shared linear x-scale.",
+          "axis_orientation": "x",
+          "axis_ref": {
+            "scene_path": "chart.axes[0]",
+            "components": {
+              "domain": {
+                "type": "line",
+                "position": {
+                  "x1": 55.1,
+                  "y1": 241.6,
+                  "x2": 467.2,
+                  "y2": 241.6
+                }
+              },
+              "ticks": [
+                {
+                  "label": "200",
+                  "position": {
+                    "x": 96.6,
+                    "y": 241.6
+                  }
+                },
+                {
+                  "label": "300",
+                  "position": {
+                    "x": 152.3,
+                    "y": 241.6
+                  }
+                },
+                {
+                  "label": "400",
+                  "position": {
+                    "x": 208,
+                    "y": 241.6
+                  }
+                },
+                {
+                  "label": "500",
+                  "position": {
+                    "x": 263.8,
+                    "y": 241.6
+                  }
+                },
+                {
+                  "label": "600",
+                  "position": {
+                    "x": 319.5,
+                    "y": 241.6
+                  }
+                },
+                {
+                  "label": "700",
+                  "position": {
+                    "x": 375.3,
+                    "y": 241.6
+                  }
+                },
+                {
+                  "label": "800",
+                  "position": {
+                    "x": 431,
+                    "y": 241.6
+                  }
+                }
+              ],
+              "labels": [
+                {
+                  "text": "200",
+                  "position": {
+                    "x": 96.6,
+                    "y": 248,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "300",
+                  "position": {
+                    "x": 152.3,
+                    "y": 248,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "400",
+                  "position": {
+                    "x": 208,
+                    "y": 248,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "500",
+                  "position": {
+                    "x": 263.8,
+                    "y": 248,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "600",
+                  "position": {
+                    "x": 319.5,
+                    "y": 248,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "700",
+                  "position": {
+                    "x": 375.3,
+                    "y": 248,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "800",
+                  "position": {
+                    "x": 431,
+                    "y": 248,
+                    "dy": 7
+                  }
+                }
+              ],
+              "title": {
+                "text": "Equilibrium Temperature (Kelvin)",
+                "position": {
+                  "x": 261,
+                  "y": 271.7,
+                  "dy": 16
+                }
+              }
+            },
+            "data_domain": {
+              "min": 200,
+              "max": 800,
+              "source": "axis.x.labels[0..6].content.text"
+            },
+            "pixel_domain": {
+              "min": 55.1,
+              "max": 467.2
+            }
+          },
+          "grid_ref": {
+            "scene_path": "chart.grids.gridX",
+            "grid_lines": [
+              {
+                "x": 96.6,
+                "y1": 241,
+                "y2": 46.1
+              },
+              {
+                "x": 152.3,
+                "y1": 241,
+                "y2": 46.1
+              },
+              {
+                "x": 208,
+                "y1": 241,
+                "y2": 46.1
+              },
+              {
+                "x": 263.8,
+                "y1": 241,
+                "y2": 46.1
+              },
+              {
+                "x": 319.5,
+                "y1": 241,
+                "y2": 46.1
+              },
+              {
+                "x": 375.2,
+                "y1": 241,
+                "y2": 46.1
+              },
+              {
+                "x": 431,
+                "y1": 241,
+                "y2": 46.1
+              }
+            ]
+          },
+          "mark_group_ref": {
+            "scene_path": "chart.marks[0].marks",
+            "marks": [
+              {
+                "label": "Kepler-22 b",
+                "x": 154.2,
+                "y": 227.7
+              },
+              {
+                "label": "P12",
+                "x": 182.5,
+                "y": 197.7
+              },
+              {
+                "label": "Kepler-413 b",
+                "x": 194.4,
+                "y": 155.8
+              },
+              {
+                "label": "Kepler-89 d",
+                "x": 271.8,
+                "y": 191.7
+              },
+              {
+                "label": "Kepler-11 g",
+                "x": 254.2,
+                "y": 241.6
+              },
+              {
+                "label": "Kepler-277 b",
+                "x": 377.2,
+                "y": 126.3
+              },
+              {
+                "label": "WASP-127b",
+                "x": 454.6,
+                "y": 241.6
+              }
+            ]
+          }
+        },
+        {
+          "trigger": [
+            "data_domain.mass",
+            "axis.y.domain.position"
+          ],
+          "elements": [
+            "axis.y.domain",
+            "axis.y.ticks",
+            "axis.y.labels",
+            "gridY",
+            "mark_group.point"
+          ],
+          "attributes": [
+            "data_domain_min",
+            "data_domain_max",
+            "pixel_domain_min",
+            "pixel_domain_max",
+            "coordinate_system"
+          ],
+          "semantics": "IF y-axis tick labels or domain endpoints change, THEN all y positions of grid lines and marks MUST be recomputed using the shared linear y-scale.",
+          "axis_orientation": "y",
+          "axis_ref": {
+            "scene_path": "chart.axes[1]",
+            "components": {
+              "domain": {
+                "type": "line",
+                "position": {
+                  "x1": 54.5,
+                  "y1": 46.1,
+                  "x2": 54.5,
+                  "y2": 240.9
+                }
+              },
+              "ticks": [
+                {
+                  "label": "0",
+                  "position": {
+                    "x": 54.5,
+                    "y": 241
+                  }
+                },
+                {
+                  "label": "10",
+                  "position": {
+                    "x": 54.5,
+                    "y": 214.5
+                  }
+                },
+                {
+                  "label": "20",
+                  "position": {
+                    "x": 54.5,
+                    "y": 188
+                  }
+                },
+                {
+                  "label": "30",
+                  "position": {
+                    "x": 54.5,
+                    "y": 161.6
+                  }
+                },
+                {
+                  "label": "40",
+                  "position": {
+                    "x": 54.5,
+                    "y": 135.1
+                  }
+                },
+                {
+                  "label": "50",
+                  "position": {
+                    "x": 54.5,
+                    "y": 108.6
+                  }
+                },
+                {
+                  "label": "60",
+                  "position": {
+                    "x": 54.5,
+                    "y": 82.2
+                  }
+                },
+                {
+                  "label": "70",
+                  "position": {
+                    "x": 54.5,
+                    "y": 55.7
+                  }
+                },
+                {
+                  "label": "80",
+                  "position": {
+                    "x": 54.5,
+                    "y": 29.2
+                  }
+                }
+              ],
+              "labels": [
+                {
+                  "text": "0",
+                  "position": {
+                    "x": 48.1,
+                    "y": 241,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "10",
+                  "position": {
+                    "x": 48.1,
+                    "y": 214.5,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "20",
+                  "position": {
+                    "x": 48.1,
+                    "y": 188,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "30",
+                  "position": {
+                    "x": 48.1,
+                    "y": 161.6,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "40",
+                  "position": {
+                    "x": 48.1,
+                    "y": 135.1,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "50",
+                  "position": {
+                    "x": 48.1,
+                    "y": 108.6,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "60",
+                  "position": {
+                    "x": 48.1,
+                    "y": 82.2,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "70",
+                  "position": {
+                    "x": 48.1,
+                    "y": 55.7,
+                    "dy": 7
+                  }
+                },
+                {
+                  "text": "80",
+                  "position": {
+                    "x": 48.1,
+                    "y": 29.2,
+                    "dy": 7
+                  }
+                }
+              ],
+              "title": {
+                "text": "Planetary Mass (Me)",
+                "position": {
+                  "transform": "rotate(-90 79.8 63.8)",
+                  "dy": 16
+                }
+              }
+            },
+            "data_domain": {
+              "min": 0,
+              "max": 80,
+              "source": "axis.y.labels[0..8].content.text"
+            },
+            "pixel_domain": {
+              "min": 240.9,
+              "max": 46.1
+            }
+          },
+          "grid_ref": {
+            "scene_path": "chart.grids.gridY",
+            "grid_lines": [
+              {
+                "y": 240.9,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 214.4,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 187.9,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 161.4,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 134.9,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 108.4,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 82,
+                "x1": 55.1,
+                "x2": 467.2
+              },
+              {
+                "y": 57.5,
+                "x1": 55.1,
+                "x2": 467.2
+              }
+            ]
+          },
+          "mark_group_ref": {
+            "scene_path": "chart.marks[0].marks",
+            "marks": [
+              {
+                "label": "Kepler-22 b",
+                "x": 154.2,
+                "y": 227.7
+              },
+              {
+                "label": "P12",
+                "x": 182.5,
+                "y": 197.7
+              },
+              {
+                "label": "Kepler-413 b",
+                "x": 194.4,
+                "y": 155.8
+              },
+              {
+                "label": "Kepler-89 d",
+                "x": 271.8,
+                "y": 191.7
+              },
+              {
+                "label": "Kepler-11 g",
+                "x": 254.2,
+                "y": 241.6
+              },
+              {
+                "label": "Kepler-277 b",
+                "x": 377.2,
+                "y": 126.3
+              },
+              {
+                "label": "WASP-127b",
+                "x": 454.6,
+                "y": 241.6
+              }
+            ]
+          }
+        }
+      ],
+      "proportionality": []
+    },
+    "spatial_distribution": {
+      "alignment": [
+        {
+          "trigger": [
+            "axis.x.ticks.position.x",
+            "gridX.position.x"
+          ],
+          "elements": [
+            "axis.x.tick",
+            "grid_line.vertical"
+          ],
+          "attributes": [
+            "position.x"
+          ],
+          "semantics": "Each vertical grid line MUST be horizontally aligned with its corresponding x-axis tick mark.",
+          "axis_orientation": "x",
+          "tick_to_grid_alignment": [
+            {
+              "tick_label": "200",
+              "tick_position_x": 96.6,
+              "grid_line_x": 96.6
+            },
+            {
+              "tick_label": "300",
+              "tick_position_x": 152.3,
+              "grid_line_x": 152.3
+            },
+            {
+              "tick_label": "400",
+              "tick_position_x": 208,
+              "grid_line_x": 208
+            },
+            {
+              "tick_label": "500",
+              "tick_position_x": 263.8,
+              "grid_line_x": 263.8
+            },
+            {
+              "tick_label": "600",
+              "tick_position_x": 319.5,
+              "grid_line_x": 319.5
+            },
+            {
+              "tick_label": "700",
+              "tick_position_x": 375.3,
+              "grid_line_x": 375.2
+            },
+            {
+              "tick_label": "800",
+              "tick_position_x": 431,
+              "grid_line_x": 431
+            }
+          ]
+        },
+        {
+          "trigger": [
+            "axis.y.ticks.position.y",
+            "gridY.position.y"
+          ],
+          "elements": [
+            "axis.y.tick",
+            "grid_line.horizontal"
+          ],
+          "attributes": [
+            "position.y"
+          ],
+          "semantics": "Each horizontal grid line MUST be vertically aligned with its corresponding y-axis tick mark.",
+          "axis_orientation": "y",
+          "tick_to_grid_alignment": [
+            {
+              "tick_label": "0",
+              "tick_position_y": 241,
+              "grid_line_y": 240.9
+            },
+            {
+              "tick_label": "10",
+              "tick_position_y": 214.5,
+              "grid_line_y": 214.4
+            },
+            {
+              "tick_label": "20",
+              "tick_position_y": 188,
+              "grid_line_y": 187.9
+            },
+            {
+              "tick_label": "30",
+              "tick_position_y": 161.6,
+              "grid_line_y": 161.4
+            },
+            {
+              "tick_label": "40",
+              "tick_position_y": 135.1,
+              "grid_line_y": 134.9
+            },
+            {
+              "tick_label": "50",
+              "tick_position_y": 108.6,
+              "grid_line_y": 108.4
+            },
+            {
+              "tick_label": "60",
+              "tick_position_y": 82.2,
+              "grid_line_y": 82
+            },
+            {
+              "tick_label": "70",
+              "tick_position_y": 55.7,
+              "grid_line_y": 57.5
+            }
+          ]
+        }
+      ],
+      "intra_group_spacing": [
+        {
+          "trigger": [
+            "mark.position",
+            "mark_label.position"
+          ],
+          "elements": [
+            "mark.point",
+            "mark_label"
+          ],
+          "attributes": [
+            "position.x",
+            "position.y",
+            "padding.vertical"
+          ],
+          "semantics": "Each point's label MUST remain horizontally centered on the point (same x) and vertically offset upward by a constant 11.9 px.",
+          "mark_label_pairs": [
+            {
+              "label_text": "Kepler-22 b",
+              "mark_position": {
+                "x": 154.2,
+                "y": 227.7
+              },
+              "label_position": {
+                "x": 154.2,
+                "y": 215.8
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            },
+            {
+              "label_text": "P12",
+              "mark_position": {
+                "x": 182.5,
+                "y": 197.7
+              },
+              "label_position": {
+                "x": 182.5,
+                "y": 185.8
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            },
+            {
+              "label_text": "Kepler-413 b",
+              "mark_position": {
+                "x": 194.4,
+                "y": 155.8
+              },
+              "label_position": {
+                "x": 194.4,
+                "y": 143.9
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            },
+            {
+              "label_text": "Kepler-89 d",
+              "mark_position": {
+                "x": 271.8,
+                "y": 191.7
+              },
+              "label_position": {
+                "x": 271.8,
+                "y": 179.8
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            },
+            {
+              "label_text": "Kepler-11 g",
+              "mark_position": {
+                "x": 254.2,
+                "y": 241.6
+              },
+              "label_position": {
+                "x": 254.2,
+                "y": 229.7
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            },
+            {
+              "label_text": "Kepler-277 b",
+              "mark_position": {
+                "x": 377.2,
+                "y": 126.3
+              },
+              "label_position": {
+                "x": 377.2,
+                "y": 114.4
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            },
+            {
+              "label_text": "WASP-127b",
+              "mark_position": {
+                "x": 454.6,
+                "y": 241.6
+              },
+              "label_position": {
+                "x": 454.6,
+                "y": 229.7
+              },
+              "horizontal_offset": 0,
+              "vertical_offset": -11.9
+            }
+          ]
+        }
+      ],
+      "stacking": []
+    },
+    "layout_cascade": {
+      "bottom_up_expansion": [],
+      "top_down_compression": [],
+      "collision_avoidance": [
+        {
+          "trigger": [
+            "text.content",
+            "mark.position"
+          ],
+          "elements": [
+            "text.mark_label",
+            "mark.point",
+            "plot_area"
+          ],
+          "attributes": [
+            "bounding_box",
+            "position"
+          ],
+          "semantics": "Point labels are placed 11.9 px above each point with matching x so that text bounding boxes do NOT overlap the circular marks. Changing label text or font-size MUST preserve non-overlap, potentially by adjusting the vertical offset or plot area.",
+          "mark_style": {
+            "radius": 3.6,
+            "scene_path": "chart.marks[0].marks[*].size.radius"
+          },
+          "label_style": {
+            "font_size": 9,
+            "text_anchor": "middle",
+            "scene_path": "chart.marks[0].labels[*].style"
+          },
+          "example_pair": {
+            "label_text": "Kepler-22 b",
+            "mark_center": {
+              "x": 154.2,
+              "y": 227.7
+            },
+            "label_anchor": {
+              "x": 154.2,
+              "y": 215.8
+            },
+            "vertical_gap_pixels": 11.9
+          }
+        }
+      ]
+    },
+    "semantic_and_style": {
+      "category_binding": [
+        {
+          "trigger": [
+            "data_category.Confirmed Sub-Neptunes"
+          ],
+          "elements": [
+            "legend_item",
+            "mark.point",
+            "mark_group"
+          ],
+          "attributes": [
+            "fill",
+            "stroke",
+            "style"
+          ],
+          "semantics": "All marks and legend items for the 'Confirmed Sub-Neptunes' category MUST share the same cyan fill and stroke styling.",
+          "category_key": "Confirmed Sub-Neptunes",
+          "legend_item_ref": {
+            "scene_path": "chart.legend.items[0]",
+            "label_text": "Confirmed Sub-Neptunes",
+            "mark_style": {
+              "fill": "#00bac9",
+              "stroke-width": 0.7
+            }
+          },
+          "mark_group_ref": {
+            "scene_path": "chart.marks[0].marks",
+            "shared_style": {
+              "fill": "#00bac9",
+              "stroke": "#00bac9",
+              "stroke-width": 0.7
+            },
+            "marks_count": 7
+          }
+        }
+      ],
+      "z_order_occlusion": []
+    }
+  }
+}

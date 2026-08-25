@@ -1,0 +1,507 @@
+{
+  "chart": {
+    "type": "chart",
+    "titles": [
+      {
+        "type": "text",
+        "role": "chart_title",
+        "content": {},
+        "style": {},
+        "position": {}
+      }
+    ],
+    "backgrounds": [
+      {
+        "type": "background",
+        "style": {
+          "fill": "#ffffff"
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "type": "background",
+        "style": {
+          "fill": "#ffffff",
+          "strokeWidth": 0.7
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 365.7,
+          "transform": "translate(0 73.1)"
+        }
+      },
+      {
+        "type": "background",
+        "style": {
+          "fill": "#f3f3f3",
+          "fillOpacity": 0.8,
+          "strokeWidth": 0.7
+        },
+        "geometry": {
+          "x": 36,
+          "y": 73.1,
+          "width": 468.1,
+          "height": 234.1
+        }
+      }
+    ],
+    "axes": [
+      {
+        "type": "axis",
+        "orientation": "x",
+        "scale_ref": null,
+        "components": {
+          "domain": {
+            "type": "line",
+            "style": {
+              "strokeWidth": 0.7
+            },
+            "position": {
+              "d": "M 35.3 307.5 H 501.8"
+            }
+          },
+          "ticks": [
+            {
+              "type": "line",
+              "position": {
+                "d": "M 53.2 307.9 v 3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 164.4 307.9 v 3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 275.5 307.9 v 3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 386.7 307.9 v 3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 497.9 307.9 v 3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            }
+          ],
+          "labels": [
+            {
+              "type": "text",
+              "content": {
+                "text": "−10"
+              },
+              "position": {
+                "transform": "translate(53.2 73.1)",
+                "y": 247.2
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "−5"
+              },
+              "position": {
+                "transform": "translate(164.4 73.1)",
+                "y": 247.2
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "0"
+              },
+              "position": {
+                "transform": "translate(275.5 73.1)",
+                "y": 247.2
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "5"
+              },
+              "position": {
+                "transform": "translate(386.7 73.1)",
+                "y": 247.2
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "middle"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "10"
+              },
+              "position": {
+                "transform": "translate(497.9 73.1)",
+                "y": 247.2
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "middle"
+              }
+            }
+          ],
+          "title": {
+            "type": "text",
+            "content": {},
+            "position": {},
+            "style": {}
+          }
+        }
+      },
+      {
+        "type": "axis",
+        "orientation": "y",
+        "scale_ref": null,
+        "components": {
+          "domain": {
+            "type": "line",
+            "style": {
+              "strokeWidth": 0.7
+            },
+            "position": {
+              "d": "M 35.7 72.4 v 234.8"
+            }
+          },
+          "ticks": [
+            {
+              "type": "line",
+              "position": {
+                "d": "M 35.3 269.2 h -3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 35.3 215.2 h -3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 35.3 161.2 h -3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "d": "M 35.3 107.2 h -3.7"
+              },
+              "style": {
+                "stroke": "#7f7f7f",
+                "strokeWidth": 0.7
+              }
+            }
+          ],
+          "labels": [
+            {
+              "type": "text",
+              "content": {
+                "text": "0.0"
+              },
+              "position": {
+                "transform": "translate(36 269.2)",
+                "x": -4.4,
+                "y": 4.4
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "0.1"
+              },
+              "position": {
+                "transform": "translate(36 215.2)",
+                "x": -4.4,
+                "y": 4.4
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "end"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "text": "0.2"
+              },
+              "position": {
+                "transform": "translate(36 161.2)",
+                "x": -4.4,
+                "y": 4.4
+              },
+              "style": {
+                "fontSize": 8.8,
+                "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+                "textAnchor": "end"
+              }
+            }
+          ],
+          "title": {
+            "type": "text",
+            "content": {
+              "text": "Probability density"
+            },
+            "position": {
+              "transform": "rotate(-90 16 190.2)",
+              "x": 16,
+              "y": 190.2
+            },
+            "style": {
+              "fontSize": 10.2,
+              "fontFamily": "\"Open Sans\",verdana,arial,sans-serif",
+              "textAnchor": "middle"
+            }
+          }
+        }
+      }
+    ],
+    "legend": {
+      "type": "legend",
+      "title": {
+        "type": "text",
+        "content": {},
+        "style": {},
+        "position": {}
+      },
+      "items": []
+    },
+    "grids": {
+      "gridX": [
+        {
+          "type": "line",
+          "position": {
+            "d": "M 164.4 73.1 v 234.1"
+          },
+          "style": {
+            "stroke": "#eeeeee",
+            "strokeWidth": 0.7
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "d": "M 302.8 73.1 v 234.1"
+          },
+          "style": {
+            "stroke": "#eeeeee",
+            "strokeWidth": 0.7
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "d": "M 441.2 73.1 v 234.1"
+          },
+          "style": {
+            "stroke": "#eeeeee",
+            "strokeWidth": 0.7
+          }
+        }
+      ],
+      "gridY": [
+        {
+          "type": "line",
+          "position": {
+            "d": "M 30.6 241.8 h 468.1"
+          },
+          "style": {
+            "stroke": "#eeeeee",
+            "strokeWidth": 0.7
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "d": "M 30.6 177.7 h 468.1"
+          },
+          "style": {
+            "stroke": "#eeeeee",
+            "strokeWidth": 0.7
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "d": "M 30.6 113.6 h 468.1"
+          },
+          "style": {
+            "stroke": "#eeeeee",
+            "strokeWidth": 0.7
+          }
+        }
+      ]
+    },
+    "marks": [
+      {
+        "type": "mark_group",
+        "mark_type": "area",
+        "data_key": null,
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "d": "m 0 234.1 l 89.1 -0.3 l 0.1 -0.0 l 14.9 -1.0 l 0.1 -0.0 l 14.9 -2.6 l 0.1 -0.0 l 14.9 -6.3 l 0.1 -0.1 l 14.9 -12.9 l 0.1 -0.1 l 14.9 -23.4 l 0.1 -0.2 l 14.9 -36.5 l 0.1 -0.3 l 14.9 -51.8 l 0.1 -0.4 l 14.9 -56.2 l 0.1 -0.2 l 4.9 -12.3 l 0.1 -0.1 l 4.9 -6.4 l 0.1 -0.0 l 4.9 -0.1 l 0.1 0.0 l 4.9 3.3 l 0.1 0.1 l 4.9 7.6 l 0.1 0.2 l 4.9 11.9 l 0.1 0.3 l 9.9 33.2 l 0.1 0.4 l 9.9 40.5 l 0.1 0.4 l 9.9 40.5 l 0.1 0.3 l 9.9 28.8 l 0.1 0.2 l 9.9 17.1 l 0.1 0.1 l 9.9 9.6 l 0.1 0.0 l 9.9 5.3 l 0.1 0.0 l 9.9 2.6 l 0.1 0.0 l 14.9 1.3 l 0.1 0.0 l 29.8 0.5 l 0.1 0.0 l 59.6 0.0 h 0.1 z"
+            },
+            "size": {},
+            "style": {
+              "fill": "#fc8d62",
+              "fillOpacity": 0.5,
+              "strokeWidth": 0.7
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      },
+      {
+        "type": "mark_group",
+        "mark_type": "line",
+        "data_key": null,
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "d": "M 0 234.1 H 468.1"
+            },
+            "size": {},
+            "style": {
+              "stroke": "#666",
+              "strokeWidth": 1.5,
+              "fill": "none"
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      }
+    ]
+  }
+}

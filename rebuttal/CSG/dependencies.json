@@ -1,0 +1,97 @@
+{
+  "dependencies": {
+
+    "data_to_visual_mapping": {
+      "global_scale": [
+        {
+          "trigger": ["data_domain", "axis_domain"],
+          "elements": ["axis", "mark_group"],
+          "attributes": ["domain_max", "domain_min", "coordinate_system"],
+          "semantics": "IF data extrema change, THEN global axis scale MUST be recalculated. ALL nested mark coordinates must be remapped to the new pixel-per-unit ratio."
+        }
+      ],
+      "proportionality": [
+        {
+          "trigger": ["mark.data_value", "mark.size"],
+          "elements": ["mark", "mark"],
+          "attributes": ["size", "area"],
+          "semantics": "The physical size or area ratio between any two marks MUST strictly equal their underlying data value ratio. Maintain mathematical proportion."
+        }
+      ]
+    },
+
+    "spatial_distribution": {
+      "alignment": [
+        {
+          "trigger": ["axis", "mark_group"],
+          "elements": ["axis_tick", "mark_group", "grid_line"],
+          "attributes": ["position.x", "position.y"],
+          "semantics": "Categorical groups and grid lines MUST rigidly align with their corresponding axis ticks."
+        }
+      ],
+      "intra_group_spacing": [
+        {
+          "trigger": ["mark.width", "mark.position"],
+          "elements": ["mark", "mark"],
+          "attributes": ["position.x", "position.y", "padding"],
+          "semantics": "Multiple marks within a single group MUST maintain uniform padding. Adjusting one mark's position requires recalculating sibling offsets."
+        }
+      ],
+      "stacking": [
+        {
+          "trigger": ["mark.size", "mark.position"],
+          "elements": ["mark", "mark"],
+          "attributes": ["position.y", "position.x", "baseline"],
+          "semantics": "For stacked elements, the baseline of element [i] MUST equal the cumulative size of elements [0] to [i-1]. Changing one size shifts all subsequent elements."
+        }
+      ]
+    },
+
+    "layout_cascade": {
+      "bottom_up_expansion": [
+        {
+          "trigger": ["mark.width", "group.padding"],
+          "elements": ["mark", "axis", "canvas"],
+          "attributes": ["width", "length", "viewBox.width"],
+          "semantics": "IF mark widths or paddings increase rigidly, THEN the total axis length and the global SVG viewBox MUST expand to prevent overlapping or clipping."
+        }
+      ],
+      "top_down_compression": [
+        {
+          "trigger": ["canvas", "axis.length"],
+          "elements": ["axis", "mark_group", "mark"],
+          "attributes": ["length", "width", "padding"],
+          "semantics": "IF global axis length is rigidly restricted, THEN inner mark widths and paddings MUST scale down proportionally to fit within the new boundary."
+        }
+      ],
+      "collision_avoidance": [
+        {
+          "trigger": ["text.content", "mark.size"],
+          "elements": ["text", "mark", "plot_area"],
+          "attributes": ["bounding_box", "position"],
+          "semantics": "Text bounding boxes MUST NOT overlap with marks or other text. If collision occurs, apply spatial repulsion or push plot area boundaries outward."
+        }
+      ]
+    },
+
+    "semantic_and_style": {
+      "category_binding": [
+        {
+          "trigger": ["data_category"],
+          "elements": ["legend_item", "mark", "mark_group"],
+          "attributes": ["fill", "stroke", "style"],
+          "semantics": "Elements sharing the same categorical data key MUST share identical styling (color, pattern) across the entire chart and legend."
+        }
+      ],
+      "z_order_occlusion": [
+        {
+          "trigger": ["mark.size", "mark.state"],
+          "elements": ["mark", "mark"],
+          "attributes": ["dom_index"],
+          "semantics": "Smaller elements or actively highlighted elements MUST be placed later in the SVG DOM order to render on top and avoid occlusion."
+        }
+      ]
+    }
+
+  }
+}

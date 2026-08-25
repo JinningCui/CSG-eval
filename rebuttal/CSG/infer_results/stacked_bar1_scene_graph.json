@@ -1,0 +1,1219 @@
+{
+  "chart": {
+    "type": "chart",
+    "titles": [
+      {
+        "type": "text",
+        "role": "chart_title",
+        "content": {},
+        "style": {},
+        "position": {}
+      }
+    ],
+    "backgrounds": [
+      {
+        "type": "background",
+        "style": {
+          "fill": "#ffffff"
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "type": "background",
+        "style": {
+          "fill": "#ffffff"
+        },
+        "geometry": {
+          "x": 0,
+          "y": 0,
+          "width": 513.1,
+          "height": 230.1
+        }
+      }
+    ],
+    "axes": [
+      {
+        "type": "axis",
+        "orientation": "x",
+        "scale_ref": null,
+        "components": {
+          "domain": {
+            "type": "line",
+            "style": {
+              "stroke": "#bcbcbc"
+            },
+            "position": {}
+          },
+          "ticks": [
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            }
+          ],
+          "labels": [
+            {
+              "type": "text",
+              "content": {
+                "label": "1990"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "1991"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "1992"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "1993"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "1994"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "1995"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "1996"
+              },
+              "position": {
+                "x": 0,
+                "y": 5.1
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            }
+          ],
+          "title": {
+            "type": "text",
+            "content": {},
+            "position": {},
+            "style": {}
+          }
+        }
+      },
+      {
+        "type": "axis",
+        "orientation": "y",
+        "scale_ref": null,
+        "components": {
+          "domain": {
+            "type": "line",
+            "style": {},
+            "position": {}
+          },
+          "ticks": [
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            },
+            {
+              "type": "line",
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "style": {
+                "stroke": "#333333"
+              }
+            }
+          ],
+          "labels": [
+            {
+              "type": "text",
+              "content": {
+                "label": "0"
+              },
+              "position": {
+                "x": -4.6,
+                "y": 0
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "100"
+              },
+              "position": {
+                "x": -4.6,
+                "y": 0
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "200"
+              },
+              "position": {
+                "x": -4.6,
+                "y": 0
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "300"
+              },
+              "position": {
+                "x": -4.6,
+                "y": 0
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "400"
+              },
+              "position": {
+                "x": -4.6,
+                "y": 0
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            },
+            {
+              "type": "text",
+              "content": {
+                "label": "500"
+              },
+              "position": {
+                "x": -4.6,
+                "y": 0
+              },
+              "style": {
+                "fill": "#666666"
+              }
+            }
+          ],
+          "title": {
+            "type": "text",
+            "content": {},
+            "position": {},
+            "style": {}
+          }
+        }
+      }
+    ],
+    "legend": {
+      "type": "legend",
+      "title": {
+        "type": "text",
+        "content": {},
+        "style": {},
+        "position": {}
+      },
+      "items": [
+        {
+          "type": "legend_item",
+          "data_key": "North",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "position": {}
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "label": "North"
+            },
+            "style": {
+              "fill": "#666666"
+            },
+            "position": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "type": "legend_item",
+          "data_key": "Southwest",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "position": {}
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "label": "Southwest"
+            },
+            "style": {
+              "fill": "#666666"
+            },
+            "position": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "type": "legend_item",
+          "data_key": "East",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "position": {}
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "label": "East"
+            },
+            "style": {
+              "fill": "#666666"
+            },
+            "position": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "type": "legend_item",
+          "data_key": "South",
+          "mark": {
+            "type": "symbol",
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "position": {}
+          },
+          "label": {
+            "type": "text",
+            "content": {
+              "label": "South"
+            },
+            "style": {
+              "fill": "#666666"
+            },
+            "position": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    "grids": {
+      "gridX": [],
+      "gridY": [
+        {
+          "type": "line",
+          "position": {
+            "x": 0,
+            "y": 150.6
+          },
+          "style": {
+            "stroke": "#666666",
+            "opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x": 0,
+            "y": 120.5
+          },
+          "style": {
+            "stroke": "#666666",
+            "opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x": 0,
+            "y": 90.3
+          },
+          "style": {
+            "stroke": "#666666",
+            "opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x": 0,
+            "y": 60.2
+          },
+          "style": {
+            "stroke": "#666666",
+            "opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x": 0,
+            "y": 30.1
+          },
+          "style": {
+            "stroke": "#666666",
+            "opacity": 0.3
+          }
+        },
+        {
+          "type": "line",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "style": {
+            "stroke": "#666666",
+            "opacity": 0.3
+          }
+        }
+      ]
+    },
+    "marks": [
+      {
+        "type": "mark_group",
+        "mark_type": "rect",
+        "data_key": "North",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "x": 11.8,
+              "y": 133.1
+            },
+            "size": {
+              "width": 47.2,
+              "height": 17.5
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 68.3,
+              "y": 129.1
+            },
+            "size": {
+              "width": 47.2,
+              "height": 21.5
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 124.8,
+              "y": 120.5
+            },
+            "size": {
+              "width": 47.2,
+              "height": 30.1
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 181.3,
+              "y": 123.5
+            },
+            "size": {
+              "width": 47.2,
+              "height": 27.1
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 237.8,
+              "y": 120.5
+            },
+            "size": {
+              "width": 47.2,
+              "height": 30.1
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 294.3,
+              "y": 110.9
+            },
+            "size": {
+              "width": 47.2,
+              "height": 39.7
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 350.8,
+              "y": 110.9
+            },
+            "size": {
+              "width": 47.2,
+              "height": 39.7
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 407.3,
+              "y": 110.9
+            },
+            "size": {
+              "width": 47.2,
+              "height": 39.7
+            },
+            "style": {
+              "fill": "#2a79af"
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      },
+      {
+        "type": "mark_group",
+        "mark_type": "rect",
+        "data_key": "Southwest",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "x": 11.8,
+              "y": 118
+            },
+            "size": {
+              "width": 47.2,
+              "height": 15.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 68.3,
+              "y": 111
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 124.8,
+              "y": 98.4
+            },
+            "size": {
+              "width": 47.2,
+              "height": 22.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 181.3,
+              "y": 101.4
+            },
+            "size": {
+              "width": 47.2,
+              "height": 22.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 237.8,
+              "y": 98.4
+            },
+            "size": {
+              "width": 47.2,
+              "height": 22.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 294.3,
+              "y": 83.8
+            },
+            "size": {
+              "width": 47.2,
+              "height": 27.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 350.8,
+              "y": 83.8
+            },
+            "size": {
+              "width": 47.2,
+              "height": 27.1
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 407.3,
+              "y": 74.2
+            },
+            "size": {
+              "width": 47.2,
+              "height": 36.7
+            },
+            "style": {
+              "fill": "#3299bb"
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      },
+      {
+        "type": "mark_group",
+        "mark_type": "rect",
+        "data_key": "South",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "x": 11.8,
+              "y": 105.9
+            },
+            "size": {
+              "width": 47.2,
+              "height": 12.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 68.3,
+              "y": 95.9
+            },
+            "size": {
+              "width": 47.2,
+              "height": 15.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 124.8,
+              "y": 80.3
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 181.3,
+              "y": 83.3
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 237.8,
+              "y": 80.3
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 294.3,
+              "y": 62.7
+            },
+            "size": {
+              "width": 47.2,
+              "height": 21.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 350.8,
+              "y": 62.7
+            },
+            "size": {
+              "width": 47.2,
+              "height": 21.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 407.3,
+              "y": 50.1
+            },
+            "size": {
+              "width": 47.2,
+              "height": 24.1
+            },
+            "style": {
+              "fill": "#84c7d9"
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      },
+      {
+        "type": "mark_group",
+        "mark_type": "rect",
+        "data_key": "East",
+        "encoding": {
+          "position": [
+            "x",
+            "y"
+          ],
+          "size": [
+            "width",
+            "height",
+            "radius"
+          ],
+          "style": [
+            "fill",
+            "stroke",
+            "opacity"
+          ],
+          "geometry": [
+            "angle",
+            "innerRadius",
+            "outerRadius"
+          ],
+          "text": [
+            "label",
+            "value"
+          ]
+        },
+        "marks": [
+          {
+            "type": "mark",
+            "position": {
+              "x": 11.8,
+              "y": 90.8
+            },
+            "size": {
+              "width": 47.2,
+              "height": 15.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 68.3,
+              "y": 77.8
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 124.8,
+              "y": 62.2
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 181.3,
+              "y": 65.2
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 237.8,
+              "y": 62.2
+            },
+            "size": {
+              "width": 47.2,
+              "height": 18.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 294.3,
+              "y": 41.6
+            },
+            "size": {
+              "width": 47.2,
+              "height": 21.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 350.8,
+              "y": 41.6
+            },
+            "size": {
+              "width": 47.2,
+              "height": 21.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          },
+          {
+            "type": "mark",
+            "position": {
+              "x": 407.3,
+              "y": 26
+            },
+            "size": {
+              "width": 47.2,
+              "height": 24.1
+            },
+            "style": {
+              "fill": "#a7dbd8"
+            },
+            "geometry": {},
+            "data": {}
+          }
+        ],
+        "labels": [],
+        "subgroups": []
+      }
+    ]
+  }
+}

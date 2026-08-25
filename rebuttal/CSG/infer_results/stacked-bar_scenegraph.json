@@ -1,0 +1,85 @@
+{
+    "metadata": {
+    "chart_type": "horizontal_stacked_bar_chart",
+    "title": "Global Electricity Mix by Region",
+        "coordinate_system": {
+        "orientation": "horizontal",
+        "x_domain": [0, 100],
+        "y_categories": ["Asia", "North America", "Europe"]
+    },
+    "layout": {
+        "chart_translate": [0, 112.3],
+        "bar_translate": [84.6, 46.1]
+    },
+    "series": [
+        {"id": "s0", "name": "Fossil", "color": "#1b3d4c"},
+        {"id": "s1", "name": "Hydro", "color": "#2a978f"},
+        {"id": "s2", "name": "Nuclear", "color": "#e96c47"},
+        {"id": "s3", "name": "Wind", "color": "#f38630"},
+        {"id": "s4", "name": "Solar", "color": "#e9bc5c"}
+    ]
+},
+
+    "nodes": [
+        {"id": "svg_root", "type": "svg"},
+
+        {"id": "x_axis", "type": "axis", "orientation": "horizontal"},
+        {"id": "y_axis", "type": "axis", "orientation": "vertical"},
+
+        {"id": "tick_asia", "type": "tick", "label": "Asia", "y": 205.6},
+        {"id": "tick_na", "type": "tick", "label": "North America", "y": 146.6},
+        {"id": "tick_eu", "type": "tick", "label": "Europe", "y": 87.6},
+
+        {"id": "bar_group_asia", "type": "stacked_bar", "category": "Asia", "y": 125.3},
+        {"id": "bar_group_na", "type": "stacked_bar", "category": "North America", "y": 66.3},
+        {"id": "bar_group_eu", "type": "stacked_bar", "category": "Europe", "y": 7.3},
+
+        {"id": "asia_fossil", "type": "bar", "series": "s0", "value": 60, "x": 1.3, "width": 231.3, "y": 125.3},
+        {"id": "asia_hydro", "type": "bar", "series": "s1", "value": 15, "x": 232.6, "width": 69.4, "y": 125.3},
+        {"id": "asia_nuclear", "type": "bar", "series": "s2", "value": 5, "x": 302.0, "width": 46.3, "y": 125.3},
+        {"id": "asia_wind", "type": "bar", "series": "s3", "value": 10, "x": 348.3, "width": 34.7, "y": 125.3},
+        {"id": "asia_solar", "type": "bar", "series": "s4", "value": 10, "x": 382.9, "width": 34.7, "y": 125.3},
+
+        {"id": "na_fossil", "type": "bar", "series": "s0", "value": 40, "x": 1.3, "width": 185.1, "y": 66.3},
+        {"id": "na_hydro", "type": "bar", "series": "s1", "value": 15, "x": 186.4, "width": 69.4, "y": 66.3},
+        {"id": "na_nuclear", "type": "bar", "series": "s2", "value": 20, "x": 255.8, "width": 69.4, "y": 66.3},
+        {"id": "na_wind", "type": "bar", "series": "s3", "value": 15, "x": 325.2, "width": 34.7, "y": 66.3},
+        {"id": "na_solar", "type": "bar", "series": "s4", "value": 10, "x": 359.9, "width": 34.7, "y": 66.3},
+
+        {"id": "eu_fossil", "type": "bar", "series": "s0", "value": 35, "x": 1.3, "width": 148.9, "y": 7.3},
+        {"id": "eu_hydro", "type": "bar", "series": "s1", "value": 20, "x": 149.7, "width": 69.4, "y": 7.3},
+        {"id": "eu_nuclear", "type": "bar", "series": "s2", "value": 25, "x": 219.0, "width": 82.5, "y": 7.3},
+        {"id": "eu_wind", "type": "bar", "series": "s3", "value": 15, "x": 301.7, "width": 58.0, "y": 7.3},
+        {"id": "eu_solar", "type": "bar", "series": "s4", "value": 5, "x": 359.7, "width": 23.2, "y": 7.3}
+
+    ],
+
+    "edges": [
+        {"type": "parent", "from": "svg_root", "to": "x_axis"},
+        {"type": "parent", "from": "svg_root", "to": "y_axis"},
+
+        {"type": "category_map", "from": "tick_asia", "to": "bar_group_asia"},
+        {"type": "category_map", "from": "tick_na", "to": "bar_group_na"},
+        {"type": "category_map", "from": "tick_eu", "to": "bar_group_eu"},
+
+        {"type": "stack", "from": "asia_fossil", "to": "asia_hydro"},
+        {"type": "stack", "from": "asia_hydro", "to": "asia_nuclear"},
+        {"type": "stack", "from": "asia_nuclear", "to": "asia_wind"},
+        {"type": "stack", "from": "asia_wind", "to": "asia_solar"},
+
+        {"type": "stack", "from": "na_fossil", "to": "na_hydro"},
+        {"type": "stack", "from": "na_hydro", "to": "na_nuclear"},
+        {"type": "stack", "from": "na_nuclear", "to": "na_wind"},
+        {"type": "stack", "from": "na_wind", "to": "na_solar"},
+
+        {"type": "stack", "from": "eu_fossil", "to": "eu_hydro"},
+        {"type": "stack", "from": "eu_hydro", "to": "eu_nuclear"},
+        {"type": "stack", "from": "eu_nuclear", "to": "eu_wind"},
+        {"type": "stack", "from": "eu_wind", "to": "eu_solar"},
+
+        {"type": "scale_x", "from": "x_axis", "to": "asia_fossil"},
+        {"type": "scale_x", "from": "x_axis", "to": "na_fossil"},
+        {"type": "scale_x", "from": "x_axis", "to": "eu_fossil"}
+
+    ]
+}

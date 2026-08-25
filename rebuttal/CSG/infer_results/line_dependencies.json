@@ -1,0 +1,216 @@
+{
+  "dependencies": {
+    "data_to_visual_mapping": {
+      "global_scale": [
+        {
+          "trigger": [
+            "data_domain.y",
+            "chart.axes[1].components.domain.position.d"
+          ],
+          "elements": [
+            "axis_y",
+            "mark_group_onshore",
+            "mark_group_offshore",
+            "gridY"
+          ],
+          "attributes": [
+            "domain_min",
+            "domain_max",
+            "pixel_min_y",
+            "pixel_max_y",
+            "scale_slope",
+            "coordinate_system"
+          ],
+          "semantics": "IF the y-data domain (e.g., min=0, max=120) or the vertical pixel span (from y=239.7 for value 0 up to y=73.8 for value 120) changes, THEN all y-positions of axis ticks, grid lines, and line-mark path commands MUST be recomputed using a single shared linear mapping so that tick labels remain aligned with their corresponding line heights."
+        },
+        {
+          "trigger": [
+            "data_domain.x_categories",
+            "chart.axes[0].components.domain.position.d"
+          ],
+          "elements": [
+            "axis_x",
+            "mark_group_onshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "categories",
+            "tick_step_pixels",
+            "pixel_min_x",
+            "pixel_max_x",
+            "coordinate_system"
+          ],
+          "semantics": "IF the set or order of x categories (month labels) or the axis horizontal pixel span (from x=62.8 for the first tick to x=415.6 for the last) changes, THEN all x-positions of ticks and line-mark vertices MUST be recomputed so that data points remain horizontally aligned with their intended categories."
+        }
+      ],
+      "proportionality": [
+        {
+          "trigger": [
+            "data_domain.y",
+            "chart.axes[1].components.labels[*].content.text"
+          ],
+          "elements": [
+            "axis_y"
+          ],
+          "attributes": [
+            "tick_step_data",
+            "tick_step_pixels"
+          ],
+          "semantics": "For the y-axis, each step of 20 data units (0→20→40→...→120) MUST correspond to an equal vertical pixel step (~27.6–27.7 px). Changing the numeric tick interval or the pixel height of the axis requires recomputing this constant pixel-per-unit ratio so that tick spacing remains uniform."
+        }
+      ]
+    },
+    "spatial_distribution": {
+      "alignment": [
+        {
+          "trigger": [
+            "chart.axes[1].components.ticks[*].position.transform",
+            "chart.grids.gridY[*].position.transform",
+            "chart.marks[*].marks[0].geometry.path"
+          ],
+          "elements": [
+            "axis_y.tick",
+            "axis_y.label",
+            "gridY.line",
+            "mark_group_onshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "position.y"
+          ],
+          "semantics": "Each horizontal grid line MUST pass through the same y pixel coordinate as the corresponding y-axis tick and label for a given data value, and data line segments representing that value MUST lie on that band. If a tick’s y-position is adjusted, the matching grid line and all data points at that value MUST shift to preserve alignment."
+        },
+        {
+          "trigger": [
+            "chart.axes[0].components.ticks[0].position.transform",
+            "chart.marks[*].marks[0].position.transform",
+            "chart.marks[*].marks[0].geometry.path"
+          ],
+          "elements": [
+            "axis_x.tick[0]",
+            "mark_group_onshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "position.x"
+          ],
+          "semantics": "The first x-position of each line series MUST coincide with the pixel x-coordinate of the first x-axis tick (Jan). If the tick is shifted or the left chart margin changes, the initial vertices of both line paths MUST move by exactly the same horizontal offset."
+        }
+      ],
+      "intra_group_spacing": [],
+      "stacking": []
+    },
+    "layout_cascade": {
+      "bottom_up_expansion": [
+        {
+          "trigger": [
+            "chart.marks[*].marks[0].geometry.path",
+            "chart.axes[0].components.domain.position.d"
+          ],
+          "elements": [
+            "axis_x",
+            "mark_group_onshore",
+            "mark_group_offshore",
+            "svg.viewBox"
+          ],
+          "attributes": [
+            "axis_length",
+            "viewBox.width",
+            "left_margin",
+            "right_margin"
+          ],
+          "semantics": "IF additional data points extend beyond the current horizontal plotting span (x from 62.8 to about 413.4) or more x ticks are added, THEN the x-axis path length and possibly the SVG viewBox width MUST be increased or the internal scaling adjusted to prevent the line paths or ticks from being clipped at the right edge."
+        }
+      ],
+      "top_down_compression": [
+        {
+          "trigger": [
+            "svg.viewBox",
+            "chart.axes[0].components.domain.position.d"
+          ],
+          "elements": [
+            "axis_x",
+            "mark_group_onshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "axis_length",
+            "series_horizontal_scale"
+          ],
+          "semantics": "IF the SVG viewBox or available inner width is reduced while keeping all x categories, THEN the x-axis domain length MUST shrink and the x coordinates of line path vertices MUST be scaled so all categories still fit between the new left and right margins without overlapping the chart frame."
+        }
+      ],
+      "collision_avoidance": [
+        {
+          "trigger": [
+            "chart.axes[0].components.title.content.text",
+            "chart.axes[0].components.labels[*].content.text",
+            "chart.marks[*].marks[0].geometry.path"
+          ],
+          "elements": [
+            "axis_x.title",
+            "axis_x.labels",
+            "mark_group_onshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "text_bounding_box",
+            "position"
+          ],
+          "semantics": "The x-axis title '2023 - 2024' and month labels MUST remain visually separated from the plotted lines. If text size or content changes such that the title or labels would overlap the line paths (e.g., near y≈240), the axis labels or the plotting area MUST be shifted or scaled to restore separation."
+        }
+      ]
+    },
+    "semantic_and_style": {
+      "category_binding": [
+        {
+          "trigger": [
+            "data_category: Onshore Wind"
+          ],
+          "elements": [
+            "legend_item_onshore",
+            "mark_group_onshore"
+          ],
+          "attributes": [
+            "fill",
+            "stroke",
+            "style"
+          ],
+          "semantics": "All visual encodings representing the 'Onshore Wind' category MUST share the same color (#0cf). Changing this color in the legend symbol or in the line series stroke MUST propagate to the other to maintain a consistent category identity."
+        },
+        {
+          "trigger": [
+            "data_category: Offshore Wind"
+          ],
+          "elements": [
+            "legend_item_offshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "fill",
+            "stroke",
+            "style"
+          ],
+          "semantics": "All visual encodings representing the 'Offshore Wind' category MUST share the same color (#f51454). Changing this color in the legend symbol or in the line series stroke MUST propagate to the other to maintain a consistent category identity."
+        }
+      ],
+      "z_order_occlusion": [
+        {
+          "trigger": [
+            "chart.grids.gridY[*]",
+            "chart.marks[*].marks[0]"
+          ],
+          "elements": [
+            "gridY.line",
+            "mark_group_onshore",
+            "mark_group_offshore"
+          ],
+          "attributes": [
+            "dom_index"
+          ],
+          "semantics": "To keep the line series clearly visible, the horizontal grid lines MUST be rendered earlier in the SVG DOM than the data lines, so that the lines appear on top. If the DOM order is changed (e.g., inserting new elements), this relative ordering MUST be preserved."
+        }
+      ]
+    }
+  }
+}

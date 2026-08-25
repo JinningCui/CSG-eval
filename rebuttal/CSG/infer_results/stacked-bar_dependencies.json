@@ -1,0 +1,578 @@
+{
+  "dependencies": {
+    "data_to_visual_mapping": {
+      "global_scale": [
+        {
+          "trigger": [
+            "data_domain(0–100%)",
+            "axis.bottom.domain"
+          ],
+          "elements": [
+            {
+              "type": "axis.domain",
+              "hierarchy_path": "chart.axes[1].components.domain",
+              "position": {
+                "x1": 85.9,
+                "y1": 240.3,
+                "x2": 496.7,
+                "y2": 240.3
+              }
+            },
+            {
+              "type": "axis.ticks_labels",
+              "hierarchy_path": "chart.axes[1].components.labels",
+              "ticks": [
+                {
+                  "label": "0%",
+                  "x": 85.9
+                },
+                {
+                  "label": "20%",
+                  "x": 163.0
+                },
+                {
+                  "label": "40%",
+                  "x": 240.2
+                },
+                {
+                  "label": "60%",
+                  "x": 317.4
+                },
+                {
+                  "label": "80%",
+                  "x": 394.6
+                },
+                {
+                  "label": "100%",
+                  "x": 471.8
+                }
+              ]
+            },
+            {
+              "type": "gridX",
+              "hierarchy_path": "chart.grids.gridX",
+              "lines_x": [
+                85.9,
+                163.1,
+                240.2,
+                317.4,
+                394.6,
+                471.8
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "domain_min": {
+                "value": 0,
+                "unit": "%",
+                "x": 85.9
+              }
+            },
+            {
+              "domain_max": {
+                "value": 100,
+                "unit": "%",
+                "x": 471.8
+              }
+            },
+            {
+              "span_px": 385.9
+            },
+            {
+              "px_per_percent": 3.859
+            },
+            {
+              "coordinate_system": "cartesian_x_percent",
+              "axis_orientation": "bottom",
+              "plot_x_origin": 85.9
+            }
+          ],
+          "semantics": "IF data extrema change, THEN global axis scale MUST be recalculated. ALL nested mark coordinates must be remapped to the new pixel-per-unit ratio."
+        }
+      ]
+    },
+    "spatial_distribution": {
+      "alignment": [
+        {
+          "trigger": [
+            "axis.bottom.ticks",
+            "gridX.lines"
+          ],
+          "elements": [
+            {
+              "axis_tick_label": "0%",
+              "axis_tick_x": 85.9,
+              "hierarchy_path": "chart.axes[1].components.labels[0]"
+            },
+            {
+              "grid_line_x": 85.9,
+              "hierarchy_path": "chart.grids.gridX[0]"
+            },
+            {
+              "axis_tick_label": "20%",
+              "axis_tick_x": 163.0,
+              "hierarchy_path": "chart.axes[1].components.labels[1]"
+            },
+            {
+              "grid_line_x": 163.1,
+              "hierarchy_path": "chart.grids.gridX[1]"
+            },
+            {
+              "axis_tick_label": "40%",
+              "axis_tick_x": 240.2,
+              "hierarchy_path": "chart.axes[1].components.labels[2]"
+            },
+            {
+              "grid_line_x": 240.2,
+              "hierarchy_path": "chart.grids.gridX[2]"
+            },
+            {
+              "axis_tick_label": "60%",
+              "axis_tick_x": 317.4,
+              "hierarchy_path": "chart.axes[1].components.labels[3]"
+            },
+            {
+              "grid_line_x": 317.4,
+              "hierarchy_path": "chart.grids.gridX[3]"
+            },
+            {
+              "axis_tick_label": "80%",
+              "axis_tick_x": 394.6,
+              "hierarchy_path": "chart.axes[1].components.labels[4]"
+            },
+            {
+              "grid_line_x": 394.6,
+              "hierarchy_path": "chart.grids.gridX[4]"
+            },
+            {
+              "axis_tick_label": "100%",
+              "axis_tick_x": 471.8,
+              "hierarchy_path": "chart.axes[1].components.labels[5]"
+            },
+            {
+              "grid_line_x": 471.8,
+              "hierarchy_path": "chart.grids.gridX[5]"
+            }
+          ],
+          "attributes": [
+            "position.x"
+          ],
+          "semantics": "Categorical groups and grid lines MUST rigidly align with their corresponding axis ticks."
+        },
+        {
+          "trigger": [
+            "axis.bottom.0%-tick",
+            "marks.baseline"
+          ],
+          "elements": [
+            {
+              "axis_tick_label": "0%",
+              "axis_tick_x": 85.9,
+              "hierarchy_path": "chart.axes[1].components.labels[0]"
+            },
+            {
+              "mark_group": "Fossil",
+              "row": "Asia",
+              "mark_left_x": 85.9,
+              "hierarchy_path": "chart.marks[0].marks[0]"
+            },
+            {
+              "mark_group": "Fossil",
+              "row": "North America",
+              "mark_left_x": 85.9,
+              "hierarchy_path": "chart.marks[0].marks[1]"
+            },
+            {
+              "mark_group": "Fossil",
+              "row": "Europe",
+              "mark_left_x": 85.9,
+              "hierarchy_path": "chart.marks[0].marks[2]"
+            }
+          ],
+          "attributes": [
+            "position.x"
+          ],
+          "semantics": "All stacked bars share a common baseline aligned to the X-axis 0% tick."
+        }
+      ],
+      "intra_group_spacing": [
+        {
+          "trigger": [
+            "mark.height",
+            "mark.position.y"
+          ],
+          "elements": [
+            {
+              "series": "Fossil",
+              "rows_y_top": [
+                171.4,
+                112.4,
+                53.4
+              ],
+              "height": 49,
+              "hierarchy_path": "chart.marks[0].marks"
+            },
+            {
+              "series": "Hydro",
+              "rows_y_top": [
+                171.4,
+                112.4,
+                53.4
+              ],
+              "height": 49,
+              "hierarchy_path": "chart.marks[1].marks"
+            },
+            {
+              "series": "Nuclear",
+              "rows_y_top": [
+                171.4,
+                112.4,
+                53.4
+              ],
+              "height": 49,
+              "hierarchy_path": "chart.marks[2].marks"
+            },
+            {
+              "series": "Wind",
+              "rows_y_top": [
+                171.4,
+                112.4,
+                53.4
+              ],
+              "height": 49,
+              "hierarchy_path": "chart.marks[3].marks"
+            },
+            {
+              "series": "Solar",
+              "rows_y_top": [
+                171.4,
+                112.4,
+                53.4
+              ],
+              "height": 49,
+              "hierarchy_path": "chart.marks[4].marks"
+            }
+          ],
+          "attributes": [
+            {
+              "position.y": [
+                171.4,
+                112.4,
+                53.4
+              ]
+            },
+            {
+              "padding_y_between_rows": 10
+            }
+          ],
+          "semantics": "Multiple marks across all series share identical row Y positions and heights; the vertical gap between rows is uniform (padding_y = 10). Adjusting one row’s Y or height requires recalculating sibling rows to preserve the 10px gap."
+        }
+      ],
+      "stacking": [
+        {
+          "trigger": [
+            "mark.size.width",
+            "mark.position.x"
+          ],
+          "elements": [
+            {
+              "row": "Asia",
+              "y_top": 171.4,
+              "sequence": [
+                {
+                  "series": "Fossil",
+                  "left_x": 85.9,
+                  "width": 231.3,
+                  "right_x": 317.2,
+                  "hierarchy_path": "chart.marks[0].marks[0]"
+                },
+                {
+                  "series": "Hydro",
+                  "left_x": 317.2,
+                  "width": 69.4,
+                  "right_x": 386.6,
+                  "hierarchy_path": "chart.marks[1].marks[0]"
+                },
+                {
+                  "series": "Nuclear",
+                  "left_x": 386.6,
+                  "width": 46.3,
+                  "right_x": 432.9,
+                  "hierarchy_path": "chart.marks[2].marks[0]"
+                },
+                {
+                  "series": "Wind",
+                  "left_x": 432.9,
+                  "width": 34.7,
+                  "right_x": 467.6,
+                  "hierarchy_path": "chart.marks[3].marks[0]"
+                },
+                {
+                  "series": "Solar",
+                  "left_x": 467.5,
+                  "width": 34.7,
+                  "right_x": 502.2,
+                  "hierarchy_path": "chart.marks[4].marks[0]"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            "position.x",
+            "baseline"
+          ],
+          "tolerance_px": 0.5,
+          "semantics": "For each row, the left_x of element [i] MUST equal the right_x of element [i-1] (within tolerance). Changing one width shifts all subsequent elements to preserve a continuous stack."
+        },
+        {
+          "trigger": [
+            "mark.size.width",
+            "mark.position.x"
+          ],
+          "elements": [
+            {
+              "row": "North America",
+              "y_top": 112.4,
+              "sequence": [
+                {
+                  "series": "Fossil",
+                  "left_x": 85.9,
+                  "width": 185.1,
+                  "right_x": 271.0,
+                  "hierarchy_path": "chart.marks[0].marks[1]"
+                },
+                {
+                  "series": "Hydro",
+                  "left_x": 271.0,
+                  "width": 69.4,
+                  "right_x": 340.4,
+                  "hierarchy_path": "chart.marks[1].marks[1]"
+                },
+                {
+                  "series": "Nuclear",
+                  "left_x": 340.4,
+                  "width": 69.4,
+                  "right_x": 409.8,
+                  "hierarchy_path": "chart.marks[2].marks[1]"
+                },
+                {
+                  "series": "Wind",
+                  "left_x": 409.8,
+                  "width": 34.7,
+                  "right_x": 444.5,
+                  "hierarchy_path": "chart.marks[3].marks[1]"
+                },
+                {
+                  "series": "Solar",
+                  "left_x": 444.5,
+                  "width": 34.7,
+                  "right_x": 479.2,
+                  "hierarchy_path": "chart.marks[4].marks[1]"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            "position.x",
+            "baseline"
+          ],
+          "tolerance_px": 0.5,
+          "semantics": "For the North America row, preserve contiguous stacking: left_x[i] = right_x[i-1] within tolerance."
+        },
+        {
+          "trigger": [
+            "mark.size.width",
+            "mark.position.x"
+          ],
+          "elements": [
+            {
+              "row": "Europe",
+              "y_top": 53.4,
+              "sequence": [
+                {
+                  "series": "Fossil",
+                  "left_x": 85.9,
+                  "width": 148.9,
+                  "right_x": 234.8,
+                  "hierarchy_path": "chart.marks[0].marks[2]"
+                },
+                {
+                  "series": "Hydro",
+                  "left_x": 234.3,
+                  "width": 69.4,
+                  "right_x": 303.7,
+                  "hierarchy_path": "chart.marks[1].marks[2]"
+                },
+                {
+                  "series": "Nuclear",
+                  "left_x": 303.6,
+                  "width": 82.5,
+                  "right_x": 386.1,
+                  "hierarchy_path": "chart.marks[2].marks[2]"
+                },
+                {
+                  "series": "Wind",
+                  "left_x": 386.3,
+                  "width": 58.0,
+                  "right_x": 444.3,
+                  "hierarchy_path": "chart.marks[3].marks[2]"
+                },
+                {
+                  "series": "Solar",
+                  "left_x": 444.3,
+                  "width": 23.2,
+                  "right_x": 467.5,
+                  "hierarchy_path": "chart.marks[4].marks[2]"
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            "position.x",
+            "baseline"
+          ],
+          "tolerance_px": 0.5,
+          "semantics": "For the Europe row, preserve contiguous stacking: left_x[i] = right_x[i-1] within tolerance."
+        }
+      ]
+    },
+    "semantic_and_style": {
+      "category_binding": [
+        {
+          "trigger": [
+            "data_category=Fossil"
+          ],
+          "elements": [
+            {
+              "legend_item": "Fossil",
+              "fill": "#1b3d4c",
+              "hierarchy_path": "chart.legend.items[0].mark"
+            },
+            {
+              "marks_series": "Fossil",
+              "fill": "#1b3d4c",
+              "hierarchy_path": "chart.marks[0].marks"
+            }
+          ],
+          "attributes": [
+            "fill"
+          ],
+          "semantics": "Legend item and all Fossil bars share identical fill color."
+        },
+        {
+          "trigger": [
+            "data_category=Hydro"
+          ],
+          "elements": [
+            {
+              "legend_item": "Hydro",
+              "fill": "#2a978f",
+              "hierarchy_path": "chart.legend.items[1].mark"
+            },
+            {
+              "marks_series": "Hydro",
+              "fill": "#2a978f",
+              "hierarchy_path": "chart.marks[1].marks"
+            }
+          ],
+          "attributes": [
+            "fill"
+          ],
+          "semantics": "Legend item and all Hydro bars share identical fill color."
+        },
+        {
+          "trigger": [
+            "data_category=Nuclear"
+          ],
+          "elements": [
+            {
+              "legend_item": "Nuclear",
+              "fill": "#e96c47",
+              "hierarchy_path": "chart.legend.items[2].mark"
+            },
+            {
+              "marks_series": "Nuclear",
+              "fill": "#e96c47",
+              "hierarchy_path": "chart.marks[2].marks"
+            }
+          ],
+          "attributes": [
+            "fill"
+          ],
+          "semantics": "Legend item and all Nuclear bars share identical fill color."
+        },
+        {
+          "trigger": [
+            "data_category=Wind"
+          ],
+          "elements": [
+            {
+              "legend_item": "Wind",
+              "fill": "#f38630",
+              "hierarchy_path": "chart.legend.items[3].mark"
+            },
+            {
+              "marks_series": "Wind",
+              "fill": "#f38630",
+              "hierarchy_path": "chart.marks[3].marks"
+            }
+          ],
+          "attributes": [
+            "fill"
+          ],
+          "semantics": "Legend item and all Wind bars share identical fill color."
+        },
+        {
+          "trigger": [
+            "data_category=Solar"
+          ],
+          "elements": [
+            {
+              "legend_item": "Solar",
+              "fill": "#e9bc5c",
+              "hierarchy_path": "chart.legend.items[4].mark"
+            },
+            {
+              "marks_series": "Solar",
+              "fill": "#e9bc5c",
+              "hierarchy_path": "chart.marks[4].marks"
+            }
+          ],
+          "attributes": [
+            "fill"
+          ],
+          "semantics": "Legend item and all Solar bars share identical fill color."
+        }
+      ],
+      "z_order_occlusion": [
+        {
+          "trigger": [
+            "mark.state=normal",
+            "text.labels"
+          ],
+          "elements": [
+            {
+              "rects_series": "all",
+              "dom_group_order": [
+                "rect",
+                "text"
+              ],
+              "hierarchy_paths": [
+                "chart.marks[0].marks",
+                "chart.marks[1].marks",
+                "chart.marks[2].marks",
+                "chart.marks[3].marks",
+                "chart.marks[4].marks"
+              ]
+            }
+          ],
+          "attributes": [
+            "dom_index"
+          ],
+          "semantics": "Value labels (text) must render after their corresponding rects to avoid occlusion. Preserve rect-before-text DOM order within each bar group so text sits on top."
+        }
+      ]
+    }
+  }
+}

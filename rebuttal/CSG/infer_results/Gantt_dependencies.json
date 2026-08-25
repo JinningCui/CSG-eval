@@ -1,0 +1,833 @@
+{
+  "dependencies": {
+    "data_to_visual_mapping": {
+      "global_scale": [
+        {
+          "id": "x_global_scale",
+          "trigger": [
+            "data_domain.x",
+            "axis.bottom.domain"
+          ],
+          "elements": [
+            "axis.bottom",
+            "gridX",
+            "mark_group",
+            "mark"
+          ],
+          "attributes": [
+            "domain_min",
+            "domain_max",
+            "coordinate_system",
+            "transform.x",
+            "width"
+          ],
+          "semantics": "The bottom (x) axis domain from x=49.4 to x=499.8 defines the horizontal coordinate system. IF the x data domain or axis length changes, THEN all dependent x positions (axis ticks, gridX lines, and bar x/width values) MUST be linearly rescaled to preserve their relative positions within the new pixel span.",
+          "element_refs": {
+            "axis_bottom_domain": {
+              "scene_path": "chart.axes[1].components.domain",
+              "orientation": "x",
+              "d": "M 49.4 329.6 H 499.8",
+              "x_start": 49.4,
+              "x_end": 499.8,
+              "y": 329.6,
+              "pixel_span": 450.4
+            },
+            "axis_bottom_ticks": [
+              {
+                "scene_path": "chart.axes[1].components.ticks[0]",
+                "transform": "translate(49.4 329.6)",
+                "x": 49.4
+              },
+              {
+                "scene_path": "chart.axes[1].components.ticks[1]",
+                "transform": "translate(139.2 329.6)",
+                "x": 139.2
+              },
+              {
+                "scene_path": "chart.axes[1].components.ticks[2]",
+                "transform": "translate(229 329.6)",
+                "x": 229
+              },
+              {
+                "scene_path": "chart.axes[1].components.ticks[3]",
+                "transform": "translate(318.6 329.6)",
+                "x": 318.6
+              },
+              {
+                "scene_path": "chart.axes[1].components.ticks[4]",
+                "transform": "translate(408.3 329.6)",
+                "x": 408.3
+              },
+              {
+                "scene_path": "chart.axes[1].components.ticks[5]",
+                "transform": "translate(498 329.6)",
+                "x": 498
+              }
+            ],
+            "gridX_lines": [
+              {
+                "scene_path": "chart.grids.gridX[0]",
+                "groupTransform": "translate(48.6 329.6)",
+                "local_transform": null,
+                "x": 48.6,
+                "y1": -0.8,
+                "y2": -301.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[1]",
+                "groupTransform": "translate(48.6 329.6)",
+                "local_transform": "translate(89.8)",
+                "x": 138.4,
+                "y1": -0.8,
+                "y2": -301.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[2]",
+                "groupTransform": "translate(48.6 329.6)",
+                "local_transform": "translate(179.5)",
+                "x": 228.1,
+                "y1": -0.8,
+                "y2": -301.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[3]",
+                "groupTransform": "translate(48.6 329.6)",
+                "local_transform": "translate(269.2)",
+                "x": 317.8,
+                "y1": -0.8,
+                "y2": -301.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[4]",
+                "groupTransform": "translate(48.6 329.6)",
+                "local_transform": "translate(359)",
+                "x": 407.6,
+                "y1": -0.8,
+                "y2": -301.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[5]",
+                "groupTransform": "translate(48.6 329.6)",
+                "local_transform": "translate(448.6)",
+                "x": 497.2,
+                "y1": -0.8,
+                "y2": -301.6
+              }
+            ],
+            "bar_group": {
+              "scene_path": "chart.marks[0]",
+              "groupTransform": "translate(48.6 28.8)",
+              "group_x": 48.6
+            },
+            "bars": [
+              {
+                "index": 0,
+                "scene_path": "chart.marks[0].marks[0]",
+                "x_local": 1,
+                "x_global_start": 49.6,
+                "width": 67.4,
+                "x_global_end": 117
+              },
+              {
+                "index": 1,
+                "scene_path": "chart.marks[0].marks[1]",
+                "x_local": 89.8,
+                "x_global_start": 138.4,
+                "width": 33.7,
+                "x_global_end": 172.1
+              },
+              {
+                "index": 2,
+                "scene_path": "chart.marks[0].marks[2]",
+                "x_local": 1,
+                "x_global_start": 49.6,
+                "width": 134.8,
+                "x_global_end": 184.4
+              },
+              {
+                "index": 3,
+                "scene_path": "chart.marks[0].marks[3]",
+                "x_local": 179.5,
+                "x_global_start": 228.1,
+                "width": 86.9,
+                "x_global_end": 315
+              },
+              {
+                "index": 4,
+                "scene_path": "chart.marks[0].marks[4]",
+                "x_local": 269.2,
+                "x_global_start": 317.8,
+                "width": 43.4,
+                "x_global_end": 361.2
+              },
+              {
+                "index": 5,
+                "scene_path": "chart.marks[0].marks[5]",
+                "x_local": 154.8,
+                "x_global_start": 203.4,
+                "width": 217.1,
+                "x_global_end": 420.5
+              },
+              {
+                "index": 6,
+                "scene_path": "chart.marks[0].marks[6]",
+                "x_local": 359,
+                "x_global_start": 407.6,
+                "width": 110.1,
+                "x_global_end": 517.7
+              }
+            ]
+          }
+        },
+        {
+          "id": "y_global_scale",
+          "trigger": [
+            "data_domain.y",
+            "axis.left.domain"
+          ],
+          "elements": [
+            "axis.left",
+            "gridY",
+            "mark_group",
+            "mark"
+          ],
+          "attributes": [
+            "domain_min",
+            "domain_max",
+            "coordinate_system",
+            "transform.y"
+          ],
+          "semantics": "The left (y) axis domain from y=28.8 to y=329.6 defines the vertical coordinate system for gridY lines and bar y positions. IF the y data domain or axis length changes, THEN all dependent y positions (axis ticks/labels, gridY lines, and bar y values) MUST be linearly remapped to the new pixel-per-unit scale so that their alignment with tick values is preserved.",
+          "element_refs": {
+            "axis_left_domain": {
+              "scene_path": "chart.axes[0].components.domain",
+              "orientation": "y",
+              "d": "M 49.4 28.8 v 300.8",
+              "x": 49.4,
+              "y_start": 28.8,
+              "y_end": 329.6,
+              "pixel_span": 300.8
+            },
+            "axis_left_ticks": [
+              {
+                "scene_path": "chart.axes[0].components.ticks[0]",
+                "transform": "translate(49.4 329.6)",
+                "y": 329.6,
+                "label": "1"
+              },
+              {
+                "scene_path": "chart.axes[0].components.ticks[1]",
+                "transform": "translate(49.4 275.2)",
+                "y": 275.2,
+                "label": "2"
+              },
+              {
+                "scene_path": "chart.axes[0].components.ticks[2]",
+                "transform": "translate(49.4 220.8)",
+                "y": 220.8,
+                "label": "3"
+              },
+              {
+                "scene_path": "chart.axes[0].components.ticks[3]",
+                "transform": "translate(49.4 166.4)",
+                "y": 166.4,
+                "label": "4"
+              },
+              {
+                "scene_path": "chart.axes[0].components.ticks[4]",
+                "transform": "translate(49.4 112)",
+                "y": 112,
+                "label": "5"
+              },
+              {
+                "scene_path": "chart.axes[0].components.ticks[5]",
+                "transform": "translate(49.4 57.6)",
+                "y": 57.6,
+                "label": "6"
+              },
+              {
+                "scene_path": "chart.axes[0].components.ticks[6]",
+                "transform": "translate(49.4 0)",
+                "y": 0,
+                "label": "7"
+              }
+            ],
+            "gridY_lines": [
+              {
+                "scene_path": "chart.grids.gridY[0]",
+                "groupTransform": "translate(49.4 28.8)",
+                "local_transform": "translate(0 300.8)",
+                "y": 329.6,
+                "x1": 0.8,
+                "x2": 452.5
+              },
+              {
+                "scene_path": "chart.grids.gridY[1]",
+                "groupTransform": "translate(49.4 28.8)",
+                "local_transform": "translate(0 246.4)",
+                "y": 275.2,
+                "x1": 0.8,
+                "x2": 452.5
+              },
+              {
+                "scene_path": "chart.grids.gridY[2]",
+                "groupTransform": "translate(49.4 28.8)",
+                "local_transform": "translate(0 192)",
+                "y": 220.8,
+                "x1": 0.8,
+                "x2": 452.5
+              },
+              {
+                "scene_path": "chart.grids.gridY[3]",
+                "groupTransform": "translate(49.4 28.8)",
+                "local_transform": "translate(0 137.6)",
+                "y": 166.4,
+                "x1": 0.8,
+                "x2": 452.5
+              },
+              {
+                "scene_path": "chart.grids.gridY[4]",
+                "groupTransform": "translate(49.4 28.8)",
+                "local_transform": "translate(0 83.2)",
+                "y": 112,
+                "x1": 0.8,
+                "x2": 452.5
+              },
+              {
+                "scene_path": "chart.grids.gridY[5]",
+                "groupTransform": "translate(49.4 28.8)",
+                "local_transform": "translate(0 28.8)",
+                "y": 57.6,
+                "x1": 0.8,
+                "x2": 452.5
+              }
+            ],
+            "bar_group": {
+              "scene_path": "chart.marks[0]",
+              "groupTransform": "translate(48.6 28.8)",
+              "group_y": 28.8
+            },
+            "bars": [
+              {
+                "index": 0,
+                "scene_path": "chart.marks[0].marks[0]",
+                "y_local": 281.6,
+                "y_global_top": 310.4,
+                "height": 16.6,
+                "y_global_bottom": 327
+              },
+              {
+                "index": 1,
+                "scene_path": "chart.marks[0].marks[1]",
+                "y_local": 241.6,
+                "y_global_top": 270.4,
+                "height": 16.6,
+                "y_global_bottom": 287
+              },
+              {
+                "index": 2,
+                "scene_path": "chart.marks[0].marks[2]",
+                "y_local": 192,
+                "y_global_top": 220.8,
+                "height": 16.6,
+                "y_global_bottom": 237.4
+              },
+              {
+                "index": 3,
+                "scene_path": "chart.marks[0].marks[3]",
+                "y_local": 147.2,
+                "y_global_top": 176,
+                "height": 16.6,
+                "y_global_bottom": 192.6
+              },
+              {
+                "index": 4,
+                "scene_path": "chart.marks[0].marks[4]",
+                "y_local": 92.8,
+                "y_global_top": 121.6,
+                "height": 16.6,
+                "y_global_bottom": 138.2
+              },
+              {
+                "index": 5,
+                "scene_path": "chart.marks[0].marks[5]",
+                "y_local": 48,
+                "y_global_top": 76.8,
+                "height": 16.6,
+                "y_global_bottom": 93.4
+              },
+              {
+                "index": 6,
+                "scene_path": "chart.marks[0].marks[6]",
+                "y_local": 3.2,
+                "y_global_top": 32,
+                "height": 16.6,
+                "y_global_bottom": 48.6
+              }
+            ]
+          }
+        }
+      ],
+      "proportionality": [
+        {
+          "id": "bar_width_proportionality",
+          "trigger": [
+            "mark.data_value",
+            "mark.size.width"
+          ],
+          "elements": [
+            "mark",
+            "mark"
+          ],
+          "attributes": [
+            "width",
+            "area"
+          ],
+          "semantics": "Within the horizontal bar series (chart.marks[0]), each bar's width is linearly proportional to its underlying data value. The ratio of widths between any two bars MUST equal the ratio of the corresponding data values. Adjusting a data value requires recalculating the bar's width; adjusting a bar's width implies a proportional change in its data value under the shared scale.",
+          "element_refs": {
+            "bar_group": {
+              "scene_path": "chart.marks[0]",
+              "groupTransform": "translate(48.6 28.8)"
+            },
+            "bars": [
+              {
+                "index": 0,
+                "scene_path": "chart.marks[0].marks[0]",
+                "fill": "#b3dfdd",
+                "width": 67.4
+              },
+              {
+                "index": 1,
+                "scene_path": "chart.marks[0].marks[1]",
+                "fill": "#ffedbf",
+                "width": 33.7
+              },
+              {
+                "index": 2,
+                "scene_path": "chart.marks[0].marks[2]",
+                "fill": "#aab2d1",
+                "width": 134.8
+              },
+              {
+                "index": 3,
+                "scene_path": "chart.marks[0].marks[3]",
+                "fill": "#aab2d1",
+                "width": 86.9
+              },
+              {
+                "index": 4,
+                "scene_path": "chart.marks[0].marks[4]",
+                "fill": "#aab2d1",
+                "width": 43.4
+              },
+              {
+                "index": 5,
+                "scene_path": "chart.marks[0].marks[5]",
+                "fill": "#b3dfdd",
+                "width": 217.1
+              },
+              {
+                "index": 6,
+                "scene_path": "chart.marks[0].marks[6]",
+                "fill": "#ffedbf",
+                "width": 110.1
+              }
+            ],
+            "example_width_ratios": [
+              {
+                "pair": [
+                  0,
+                  2
+                ],
+                "width_mark_0": 67.4,
+                "width_mark_2": 134.8,
+                "width_ratio_2_over_0": 2
+              },
+              {
+                "pair": [
+                  1,
+                  0
+                ],
+                "width_mark_1": 33.7,
+                "width_mark_0": 67.4,
+                "width_ratio_0_over_1": 2
+              },
+              {
+                "pair": [
+                  4,
+                  3
+                ],
+                "width_mark_4": 43.4,
+                "width_mark_3": 86.9,
+                "approx_width_ratio_3_over_4": 2.0023
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "spatial_distribution": {
+      "alignment": [
+        {
+          "id": "y_axis_grid_alignment",
+          "trigger": [
+            "axis.left.tick.position",
+            "gridY.position"
+          ],
+          "elements": [
+            "axis.left.tick",
+            "axis.left.label",
+            "gridY"
+          ],
+          "attributes": [
+            "position.y"
+          ],
+          "semantics": "Each horizontal gridY line is aligned with a corresponding left-axis tick and label at the same y coordinate. IF the y position of any tick changes due to a scale or layout update, THEN the paired gridY line and tick label MUST move to maintain identical y coordinates.",
+          "element_refs": {
+            "axis_left_ticks_and_labels": [
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[0]",
+                "label_scene_path": "chart.axes[0].components.labels[0]",
+                "value": "1",
+                "y": 329.6
+              },
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[1]",
+                "label_scene_path": "chart.axes[0].components.labels[1]",
+                "value": "2",
+                "y": 275.2
+              },
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[2]",
+                "label_scene_path": "chart.axes[0].components.labels[2]",
+                "value": "3",
+                "y": 220.8
+              },
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[3]",
+                "label_scene_path": "chart.axes[0].components.labels[3]",
+                "value": "4",
+                "y": 166.4
+              },
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[4]",
+                "label_scene_path": "chart.axes[0].components.labels[4]",
+                "value": "5",
+                "y": 112
+              },
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[5]",
+                "label_scene_path": "chart.axes[0].components.labels[5]",
+                "value": "6",
+                "y": 57.6
+              },
+              {
+                "tick_scene_path": "chart.axes[0].components.ticks[6]",
+                "label_scene_path": "chart.axes[0].components.labels[6]",
+                "value": "7",
+                "y": 0
+              }
+            ],
+            "gridY_lines": [
+              {
+                "scene_path": "chart.grids.gridY[0]",
+                "aligned_tick_label_value": "1",
+                "y": 329.6
+              },
+              {
+                "scene_path": "chart.grids.gridY[1]",
+                "aligned_tick_label_value": "2",
+                "y": 275.2
+              },
+              {
+                "scene_path": "chart.grids.gridY[2]",
+                "aligned_tick_label_value": "3",
+                "y": 220.8
+              },
+              {
+                "scene_path": "chart.grids.gridY[3]",
+                "aligned_tick_label_value": "4",
+                "y": 166.4
+              },
+              {
+                "scene_path": "chart.grids.gridY[4]",
+                "aligned_tick_label_value": "5",
+                "y": 112
+              },
+              {
+                "scene_path": "chart.grids.gridY[5]",
+                "aligned_tick_label_value": "6",
+                "y": 57.6
+              }
+            ]
+          }
+        },
+        {
+          "id": "x_axis_grid_alignment",
+          "trigger": [
+            "axis.bottom.tick.position",
+            "gridX.position"
+          ],
+          "elements": [
+            "axis.bottom.tick",
+            "axis.bottom.label",
+            "gridX"
+          ],
+          "attributes": [
+            "position.x",
+            "position.y"
+          ],
+          "semantics": "Each vertical gridX line is vertically aligned with a corresponding bottom-axis tick and label. IF the x position of any bottom tick changes, THEN the corresponding gridX line and label MUST move so that their x coordinates remain aligned along the bottom axis baseline at y=329.6.",
+          "element_refs": {
+            "axis_bottom_ticks_and_labels": [
+              {
+                "tick_scene_path": "chart.axes[1].components.ticks[0]",
+                "label_scene_path": "chart.axes[1].components.labels[0]",
+                "label_text": "Jan 2016",
+                "x": 49.4,
+                "y": 329.6
+              },
+              {
+                "tick_scene_path": "chart.axes[1].components.ticks[1]",
+                "label_scene_path": "chart.axes[1].components.labels[1]",
+                "label_text": "Mar 2016",
+                "x": 139.2,
+                "y": 329.6
+              },
+              {
+                "tick_scene_path": "chart.axes[1].components.ticks[2]",
+                "label_scene_path": "chart.axes[1].components.labels[2]",
+                "label_text": "May 2016",
+                "x": 229,
+                "y": 329.6
+              },
+              {
+                "tick_scene_path": "chart.axes[1].components.ticks[3]",
+                "label_scene_path": "chart.axes[1].components.labels[3]",
+                "label_text": "Jul 2016",
+                "x": 318.6,
+                "y": 329.6
+              },
+              {
+                "tick_scene_path": "chart.axes[1].components.ticks[4]",
+                "label_scene_path": "chart.axes[1].components.labels[4]",
+                "label_text": "Sep 2016",
+                "x": 408.3,
+                "y": 329.6
+              },
+              {
+                "tick_scene_path": "chart.axes[1].components.ticks[5]",
+                "label_scene_path": "chart.axes[1].components.labels[5]",
+                "label_text": "Nov 2016",
+                "x": 498,
+                "y": 329.6
+              }
+            ],
+            "gridX_lines": [
+              {
+                "scene_path": "chart.grids.gridX[0]",
+                "approx_aligned_tick_label": "Jan 2016",
+                "x": 48.6,
+                "baseline_y": 329.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[1]",
+                "approx_aligned_tick_label": "Mar 2016",
+                "x": 138.4,
+                "baseline_y": 329.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[2]",
+                "approx_aligned_tick_label": "May 2016",
+                "x": 228.1,
+                "baseline_y": 329.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[3]",
+                "approx_aligned_tick_label": "Jul 2016",
+                "x": 317.8,
+                "baseline_y": 329.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[4]",
+                "approx_aligned_tick_label": "Sep 2016",
+                "x": 407.6,
+                "baseline_y": 329.6
+              },
+              {
+                "scene_path": "chart.grids.gridX[5]",
+                "approx_aligned_tick_label": "Nov 2016",
+                "x": 497.2,
+                "baseline_y": 329.6
+              }
+            ]
+          }
+        },
+        {
+          "id": "bar_x_baseline_alignment",
+          "trigger": [
+            "mark_group.groupTransform",
+            "axis.left.domain.position"
+          ],
+          "elements": [
+            "axis.left",
+            "mark_group",
+            "mark"
+          ],
+          "attributes": [
+            "position.x"
+          ],
+          "semantics": "The bar group and left axis share nearly the same left margin, ensuring that bar x positions are measured from a baseline visually adjacent to the y-axis. IF the bar group is translated in x, THEN all child bars shift together, preserving their relative x offsets to the axis.",
+          "element_refs": {
+            "axis_left_domain": {
+              "scene_path": "chart.axes[0].components.domain",
+              "x": 49.4
+            },
+            "bar_group": {
+              "scene_path": "chart.marks[0]",
+              "groupTransform": "translate(48.6 28.8)",
+              "group_x": 48.6
+            },
+            "example_bar": {
+              "scene_path": "chart.marks[0].marks[2]",
+              "x_local": 1,
+              "x_global_start": 49.6
+            }
+          }
+        }
+      ],
+      "intra_group_spacing": [],
+      "stacking": []
+    },
+    "layout_cascade": {
+      "bottom_up_expansion": [],
+      "top_down_compression": [],
+      "collision_avoidance": []
+    },
+    "semantic_and_style": {
+      "category_binding": [
+        {
+          "id": "bar_color_categories",
+          "trigger": [
+            "data_category"
+          ],
+          "elements": [
+            "legend",
+            "mark",
+            "mark_group"
+          ],
+          "attributes": [
+            "fill",
+            "style"
+          ],
+          "semantics": "Bars sharing the same categorical data key use identical fill colors. In this chart, three categories are implied by the repeated fill values: #b3dfdd, #ffedbf, and #aab2d1. IF a category color is changed, THEN ALL bars belonging to that category (and any corresponding legend entries, if present) MUST update to the same fill to maintain a consistent category-to-color binding.",
+          "element_refs": {
+            "legend": {
+              "scene_path": "chart.legend",
+              "items_count": 0
+            },
+            "bar_group": {
+              "scene_path": "chart.marks[0]"
+            },
+            "marks_by_color": {
+              "#b3dfdd": [
+                {
+                  "index": 0,
+                  "scene_path": "chart.marks[0].marks[0]",
+                  "width": 67.4
+                },
+                {
+                  "index": 5,
+                  "scene_path": "chart.marks[0].marks[5]",
+                  "width": 217.1
+                }
+              ],
+              "#ffedbf": [
+                {
+                  "index": 1,
+                  "scene_path": "chart.marks[0].marks[1]",
+                  "width": 33.7
+                },
+                {
+                  "index": 6,
+                  "scene_path": "chart.marks[0].marks[6]",
+                  "width": 110.1
+                }
+              ],
+              "#aab2d1": [
+                {
+                  "index": 2,
+                  "scene_path": "chart.marks[0].marks[2]",
+                  "width": 134.8
+                },
+                {
+                  "index": 3,
+                  "scene_path": "chart.marks[0].marks[3]",
+                  "width": 86.9
+                },
+                {
+                  "index": 4,
+                  "scene_path": "chart.marks[0].marks[4]",
+                  "width": 43.4
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "z_order_occlusion": [
+        {
+          "id": "grid_axes_bar_z_order",
+          "trigger": [
+            "mark.size",
+            "layer.role"
+          ],
+          "elements": [
+            "grid_line",
+            "mark",
+            "axis"
+          ],
+          "attributes": [
+            "dom_index"
+          ],
+          "semantics": "The SVG DOM order enforces a visual layering: grid lines render first (in the background), bars render above the grid, and axes (ticks, labels, domains) render on top of bars. This prevents axes from being occluded by marks while allowing the grid to remain a subtle background reference. IF any element is reordered in the DOM, its visual stacking MUST remain consistent with this layering rule unless a deliberate highlight overrides it.",
+          "element_refs": {
+            "dom_layers": [
+              {
+                "layer_role": "grid",
+                "scene_path": "chart.grids",
+                "dom_order_index": 0
+              },
+              {
+                "layer_role": "bars",
+                "scene_path": "chart.marks[0]",
+                "dom_order_index": 1
+              },
+              {
+                "layer_role": "axes",
+                "scene_path": "chart.axes",
+                "dom_order_index": 2
+              }
+            ],
+            "example_elements": {
+              "grid_line_example": {
+                "scene_path": "chart.grids.gridY[2]",
+                "x1": 0.8,
+                "x2": 452.5
+              },
+              "bar_example": {
+                "scene_path": "chart.marks[0].marks[2]",
+                "fill": "#aab2d1",
+                "width": 134.8
+              },
+              "axis_example": {
+                "scene_path": "chart.axes[0].components.domain",
+                "d": "M 49.4 28.8 v 300.8"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
