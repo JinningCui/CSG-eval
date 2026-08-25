@@ -183,20 +183,21 @@ def write_json(path, data):
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
+    case_dir = os.path.join(script_dir, "case")
     input_paths = [
-    #    "infer_results/bar1.svg",
-    #    "infer_results/donut.svg",
-    #    "infer_results/area.svg",
-    #    "infer_results/Gantt.svg",
-    #    "infer_results/group_bar.svg",
-    #    "infer_results/group_bar2.svg",
-    #    "infer_results/group_bar3.svg",
-    #    "infer_results/line.svg",
-    #    "infer_results/line3.svg",
-    #    "infer_results/pie.svg",
-    #    "infer_results/rangechart.svg",
-    #    "infer_results/scatter.svg",
-        "infer_results/stacked_bar1.svg",
+    #    os.path.join(case_dir, "bar1.svg"),
+    #    os.path.join(case_dir, "donut.svg"),
+    #    os.path.join(case_dir, "area.svg"),
+    #    os.path.join(case_dir, "Gantt.svg"),
+    #    os.path.join(case_dir, "group_bar.svg"),
+    #    os.path.join(case_dir, "group_bar2.svg"),
+    #    os.path.join(case_dir, "group_bar3.svg"),
+    #    os.path.join(case_dir, "line.svg"),
+    #    os.path.join(case_dir, "line3.svg"),
+    #    os.path.join(case_dir, "pie.svg"),
+    #    os.path.join(case_dir, "rangechart.svg"),
+    #    os.path.join(case_dir, "scatter.svg"),
+        os.path.join(case_dir, "stacked_bar1.svg"),
     ]
     scene_graph_template = read_json_template(os.path.join(script_dir, "scene_graph.json"))
     dependencies_template = read_json_template(os.path.join(script_dir, "dependencies.json"))

@@ -7,8 +7,8 @@ import os, json, subprocess, math
 from inject_gt import inject
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-TOOL = os.path.join(ROOT, "..", "svg-chart-reuse")
-INFER = os.path.join(TOOL, "infer_results")
+TOOL = os.path.join(ROOT, "..", "CSG", "tagging")
+INFER = os.path.join(TOOL, "case")
 DATA = os.path.join(ROOT, "..", "generated_variants")
 SOURCES = ["plotly_export", "chartblocks", "fusion_clean"]
 BATCH = 30

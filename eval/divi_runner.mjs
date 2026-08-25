@@ -1,8 +1,8 @@
 import puppeteer from "puppeteer-core";
 import { readFileSync, writeFileSync } from "fs";
-const CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const DIVI="/Users/cjn/Desktop/个人/Project/Vis2026/divi/dist/divi.min.js";
-const SVGDIR=process.env.SVGDIR || "/Users/cjn/Desktop/个人/Project/Vis2026/VisAnatomy/charts_svg_cleaned_svgo";
+const CHROME=process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const DIVI=process.env.DIVI_PATH || "Path to the DIVI bundle";
+const SVGDIR=process.env.SVGDIR || "Path to your optimized SVG directory";
 const OUT=process.env.OUT || "predictions_divi.json";
 const files=readFileSync("cartesian_list.txt","utf8").split("\n").map(s=>s.trim()).filter(Boolean);
 const ROLE2CLS={tick:"tick","orphan-tick":"tick","axis-domain":"domain-x","axis-label":"axis-x label",legend:"legend label",title:"title",mark:"mark-1"};

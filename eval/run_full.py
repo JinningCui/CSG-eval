@@ -1,13 +1,13 @@
 """
 Orchestrate the full Cartesian-subset eval:
-  for each batch -> swap infer_results, run runner.mjs (fresh browser), merge.
-Assumes the svg-chart-reuse dev server is already running on $APP_URL (5180).
+  for each batch -> swap CSG/tagging/case, run runner.mjs (fresh browser), merge.
+Assumes the CSG tagging dev server is already running on $APP_URL (5180).
 """
 import os, json, shutil, subprocess, math
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-TOOL = os.path.join(ROOT, "..", "svg-chart-reuse")
-INFER = os.path.join(TOOL, "infer_results")
+TOOL = os.path.join(ROOT, "..", "CSG", "tagging")
+INFER = os.path.join(TOOL, "case")
 SVG_DIR = os.environ.get(
     "SVG_DIR", os.path.join(ROOT, "..", "VisAnatomy", "charts_svg"))
 OUT_FILE = os.environ.get("OUT_FILE", "predictions_full.json")
@@ -20,7 +20,7 @@ print(f"{len(files)} charts, {n_batches} batches of {BATCH}")
 merged = {}
 for b in range(n_batches):
     batch = files[b * BATCH:(b + 1) * BATCH]
-    # swap infer_results
+    # Swap the tagging cases for the current evaluation batch.
     for f in os.listdir(INFER):
         os.remove(os.path.join(INFER, f))
     for f in batch:

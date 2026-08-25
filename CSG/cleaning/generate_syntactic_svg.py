@@ -1181,6 +1181,6 @@ def write_cleaned_svgs_for_visanatomy(svg_dir, out_dir):
 
 if __name__ == '__main__':
     # 处理 VisAnatomy/charts_svg，清洗后的 SVG 保存到 charts_svg_cleaned/
-    svg_dir = '/Users/cjn/Desktop/个人/Project/Vis2026/VisAnatomy/charts_svg'
-    out_dir = '/Users/cjn/Desktop/个人/Project/Vis2026/VisAnatomy/charts_svg_cleaned'
+    svg_dir = os.environ.get('SVG_DIR', 'Path to your SVG directory')
+    out_dir = os.environ.get('OUTPUT_DIR', 'Path to your cleaned SVG directory')
     write_cleaned_svgs_for_visanatomy(svg_dir, out_dir)

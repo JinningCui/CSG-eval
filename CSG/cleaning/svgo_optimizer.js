@@ -16,7 +16,7 @@ async function optimizeSingleFile(content) {
                 params: {
                     overrides: {
                         // 保留 <rect>/<line>/<circle>/<polyline> 等原生图元，不转成 <path>，
-                        // 便于下游(svg-chart-reuse)按元素类型识别刻度/网格/柱子等组件
+                        // 便于下游 tagging 工具按元素类型识别刻度/网格/柱子等组件
                         convertShapeToPath: false,
                         // 保留 viewBox(原 active:false 在新版 SVGO 已失效，这里用 overrides 正确关闭)
                         removeViewBox: false,
@@ -305,8 +305,8 @@ async function processFlatDir(sourceDir, outputDir) {
 }
 
 // --- 路径配置 (VisAnatomy 扁平目录) ---
-const SOURCE_DIR = "/Users/cjn/Desktop/个人/Project/Vis2026/VisAnatomy/charts_svg_cleaned";
-const OUTPUT_DIR = "/Users/cjn/Desktop/个人/Project/Vis2026/VisAnatomy/charts_svg_cleaned_svgo";
+const SOURCE_DIR = process.env.SVG_DIR || "Path to your cleaned SVG directory";
+const OUTPUT_DIR = process.env.OUTPUT_DIR || "Path to your optimized SVG directory";
 
 processFlatDir(SOURCE_DIR, OUTPUT_DIR)
     .then(() => console.log('\n✨ 所有任务已顺利执行完毕！'))

@@ -1,7 +1,7 @@
 import { Plot } from './plot';
 import { Axis, Legend } from './scaleGuide';
 const svgs = import.meta.glob(
-  '../infer_results/*.txt',
+  '../case/*.txt',
   { eager: true, as: 'raw' }
 );
 

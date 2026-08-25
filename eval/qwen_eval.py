@@ -14,8 +14,13 @@ Qwen free-form classes -> unified via norm_qwen (regex; WEAK/noisy mapping).
 import json, glob, os, re, collections
 from mapping import norm_gt as _norm_gt
 
-QWEN_DIR = "../rebuttal/visanatomy_test385_qwen_inference_results"
-GT_DIR = "../VisAnatomy/annotations"
+ROOT = os.path.dirname(os.path.abspath(__file__))
+QWEN_DIR = os.environ.get(
+    "QWEN_DIR", os.path.join(ROOT, "case", "visanatomy_test385_qwen_inference_results")
+)
+GT_DIR = os.environ.get(
+    "GT_DIR", os.path.join(ROOT, "..", "VisAnatomy", "annotations")
+)
 
 TYPES = ["mark", "axis-label", "axis-tick", "axis-line", "gridline",
          "legend", "title", "annotation"]

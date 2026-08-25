@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer-core";
 import { readFileSync } from "fs";
-const CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const DIVI="/Users/cjn/Desktop/个人/Project/Vis2026/divi/dist/divi.min.js";
+const CHROME=process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const DIVI=process.env.DIVI_PATH || "Path to the DIVI bundle";
 const svgText=readFileSync(process.argv[2],"utf8");
 const b=await puppeteer.launch({executablePath:CHROME,headless:"new",args:["--no-sandbox"]});
 const p=await b.newPage();
